@@ -1,0 +1,79 @@
+@import url("style.css");
+body 
+{
+  background-color: black;
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 24px;
+  color: rgb(191, 207, 85);
+  margin: auto;
+}
+
+
+
+div
+{
+  margin: auto;
+  text-align: center;
+  left: 0;
+  right: 0;
+  //padding: -10px;
+  //background-color: green;
+
+}
+
+.main
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  width: 60%;
+  height: 99vh;
+  //background-color: red;
+}
+
+.header
+{
+  width: 100%;
+  top: 0;
+}
+
+.content
+{
+  width: 60%;
+  //background-color: blue;
+  line-height: 1.1;
+}
+
+.footer
+{
+  width: 100%;
+  //background-color: blue;
+  bottom: 0;
+}
+
+a
+{
+  color: rgb(85, 157, 255);
+}
+
+@media only screen and (max-width: 600px) 
+{
+  .content 
+  {
+    width: 95%;
+  }
+  
+  .main 
+  {
+    font-size: 0.9em;
+    width: 95%;
+  }
+  
+}
+@media only screen and (max-height: 850px) 
+{
+  .main
+  {
+    height: 800px;
+  }  
+}
