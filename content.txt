@@ -1,4 +1,32 @@
-ABOUT
+HOME
 
-Hi, I'm GeneralBug and this is my cool website for my cool stuff. I'm a programmer and game developer from Australia currently building my portfolio and looking for work. <br>
-My links:
+Hi, I'm GeneralBug and this is my cool website for my cool stuff. 
+                I'm a programmer and game developer from Australia currently building my portfolio and looking for work. 
+                I mostly work in Unity and Godot, but I've got experience with lots of different languages and tools.
+                I like cats and dislike writing about myself.
+    
+GAMES
+
+                Here's the games I've worked on. Most of them are more experiments with using different tools or design ideas, and aren't really "fun" or "playable". Some of the games listed here are on my Itch page, which is linked in the footer. Feel free to try those out.
+                
+                (title)Stel (2020)(picture)
+                My team and I's university capstone project, which was featured in the ACMI+RMIT 2020 Audience Lab. You play as a boy trying to find a cure for his fathers illness, so you have to go through a series of trials. I worked mostly on the UI, inventory and interaction systems, as well as miscellaneous other bits like the sled. Full credits can be found on the Itch page.
+                (link)https://pleasureelf.itch.io/stel
+                
+                (title)Tale of Bear² (2020)(picture)
+                Another project for uni my friend Artemis and I worked on, it's a turn-based RPG where you play as a teddy bear doing quests for other plushies. I worked mostly on the combat system. Also it's pronounced "Bear Bear".
+                
+                (title)Steering Not Included (2018)(picture)
+                A game made for a university jam, where the requirement was minimum controls. It's an arcade-y "Asteroids" inspired game where each player has one "fire" button for their little spinning turret thing, which also gives it momentum. The goal is to be the last one standing.
+                (link)https://generalbug.itch.io/steering-not-included
+                
+                (title)Tooth Fish (2022)(picture)
+                Made for 7dfps 2022, you play as a diver hunting mutant fish with a harpoon gun. We intended to add two more large fish and audio, but haven't gotten around to it as of writing. My first attempt at using Godot, too!
+                (link)https://generalbug.itch.io/tooth-fish
+                
+                (title)Torch Ball Prototype (2021)(picture)
+                A Unity experiment mostly about modeling and music stuff. It's a ""puzzle"" game where you light torches with their corresponding fire colour.
+                (link)https://generalbug.itch.io/torch-ball-prototype
+                
+                (title)Flicker (2018)(picture)
+                My first attempt at a game jam (Extra Jam 2018), prompt "present". You play as a little fire sprite and have to lead a kid to the exit while avoiding ghosts and collecting fuel to maintain your brightness (which the ghosts can't enter). Bad enough that I delisted it, but I'm planning to remake it soon.

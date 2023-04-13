@@ -23,7 +23,7 @@ div
 
 .main
 {
-  display: flex;
+//  display: flex;
   flex-wrap: wrap;
   align-content: space-around;
   width: 60%;
@@ -33,7 +33,9 @@ div
 
 .header
 {
+
   width: 100%;
+  background-color: black;
   top: 0;
 }
 
@@ -46,14 +48,22 @@ div
 
 .footer
 {
+  position: sticky;
+  border: 5px solid #000;
   width: 100%;
-  //background-color: blue;
+  background-color: black;
   bottom: 0;
 }
 
 a
 {
   color: rgb(85, 157, 255);
+}
+
+.has_border
+{
+  width: 80%;
+  border: 3px solid #fff;
 }
 
 @media only screen and (max-width: 600px) 
@@ -68,6 +78,10 @@ a
     font-size: 0.9em;
     width: 95%;
   }
+  .has_border
+  {
+    width: 90%;
+  }
   
 }
 @media only screen and (max-height: 850px) 
@@ -76,4 +90,5 @@ a
   {
     height: 800px;
   }  
+  
 }
