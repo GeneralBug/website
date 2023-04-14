@@ -2,9 +2,9 @@
 body 
 {
   background-color: black;
-  font-family: "Comic Sans MS", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   font-size: 24px;
-  color: rgb(191, 207, 85);
+  color: rgb(190, 190, 190);
   margin: auto;
 }
 
@@ -23,19 +23,18 @@ div
 
 .main
 {
-//  display: flex;
-  flex-wrap: wrap;
   align-content: space-around;
   width: 60%;
-  height: 99vh;
+
   //background-color: red;
 }
 
 .header
 {
-
+  border-bottom-style: solid;
   width: 100%;
   background-color: black;
+  color: rgb(200, 255, 100);
   top: 0;
 }
 
@@ -44,6 +43,7 @@ div
   width: 60%;
   //background-color: blue;
   line-height: 1.1;
+
 }
 
 .footer
@@ -53,6 +53,7 @@ div
   width: 100%;
   background-color: black;
   bottom: 0;
+  color: rgb(200, 255, 100);
 }
 
 a
@@ -60,15 +61,46 @@ a
   color: rgb(85, 157, 255);
 }
 
-.has_border
+
+{
+  color: blue;
+}
+
+.link_list, h1, h2, h3, h4, h5, h6
+{
+  font-family: "Comic Sans MS", sans-serif;
+  color: rgb(200, 255, 100);
+}
+
+.screenshot, .cat, .cat2
+{
+  border: 3px solid;
+  border-color: rgb(200, 255, 100);
+}
+
+.screenshot
 {
   width: 80%;
-  border: 3px solid #fff;
+}
+
+.cat
+{
+  width: 40%;
+}
+
+.cat2
+{
+  width: 70%;
+}
+
+#cat_gallery
+{
+  width: 80%;
 }
 
 @media only screen and (max-width: 600px) 
 {
-  .content 
+  .content, #cat_gallery
   {
     width: 95%;
   }
@@ -78,7 +110,7 @@ a
     font-size: 0.9em;
     width: 95%;
   }
-  .has_border
+  .screenshot, .cat, .cat2
   {
     width: 90%;
   }
