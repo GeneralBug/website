@@ -30,3 +30,12 @@ GAMES
                 
                 (title)Flicker (2018)(picture)
                 My first attempt at a game jam (Extra Jam 2018), prompt "present". You play as a little fire sprite and have to lead a kid to the exit while avoiding ghosts and collecting fuel to maintain your brightness (which the ghosts can't enter). Bad enough that I delisted it, but I'm planning to remake it soon.
+
+NOTES
+
+                As an exercise intended to improve my own design abilities by analysing other games, I started writing these little "review" things when I play a game (Though I don't want them to be reviews, some get more "review-y" than others). They aren't really meant for others, so some of them are very rambly and possibly incomprehensible, so read them at your own risk.
+                <br>
+                <br>
+                Also they're leasted newest to newest (based on when wrote them), noting the system I played it on and my general feelings about it (positive/negative).                
+                <br>
+                <br>
