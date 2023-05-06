@@ -152,6 +152,7 @@ a
   display: none;
   overflow: hidden;
   background-color: black;
+  text-align: left;
 } 
 
 .collapsible:after {
