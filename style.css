@@ -111,34 +111,11 @@ a
 
 #cat_gallery
 {
-  .content, #cat_gallery
-  {
-    width: 95%;
-  }
-  
-  .main 
-  {
-    font-size: 0.9em;
-    width: 95%;
-  }
-  .screenshot, .cat, .cat2, img
-  {
-    width: 90%;
-  }
-  
-}
-@media only screen and (max-height: 850px) 
-{
-  .main
-  {
-    height: 800px;
-  }  
-  
+  width: 40%;
 }
 
  /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-  background-color: black;
   background-color: white;
   font-family: "Comic Sans MS", sans-serif;
   font-weight: bold;
