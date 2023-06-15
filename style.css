@@ -1,80 +1,97 @@
 @import url("style.css");
 body 
 {
-  background-color: black;
+  background-color: rgb(118, 45, 185);
   font-family: "Roboto Slab", sans-serif;
   font-size: 24px;
-  color: rgb(190, 190, 190);
-  margin: auto;
+  color: black;
+  padding: 12px;
+  overflow: visible;
 }
-
-
 
 div
 {
-  margin: auto;
+  float: none;
   text-align: center;
   left: 0;
   right: 0;
   //padding: -10px;
-  //background-color: green;
-
+  background-color: rgb(255, 112, 47);
+  border-radius: 16px;
+  padding: 12px;
 }
 
 .main
 {
-  align-content: space-around;
-  width: 60%;
+  background-color: rgb(118, 45, 185);
+  width: 99%;
+  display: flex;
 
-  //background-color: red;
 }
 
-.header
+.nav
 {
-  border-bottom-style: solid;
-  width: 100%;
-  background-color: black;
-  color: rgb(200, 255, 100);
-  top: 0;
+  margin-left:auto;
+  margin-right: 24px;
+  width: 16%;
+  height: 1%;  
+  filter: drop-shadow(8px 8px 4px black);
+  padding-bottom: 0px;
+}
+
+.nav_offset
+{
+  margin-right:auto;
+  margin-left: 24px;
+  width: 16%;
+  height: 1%;
+  background-color: rgb(118, 45, 185);
 }
 
 .content
 {
-  width: 60%;
-  //background-color: blue;
+  width: 35%;
+  height: 1%;
   line-height: 1.1;
+  filter: drop-shadow(8px 8px 4px black);
+  padding-bottom: 0px;
 }
 
-.footer
+#breadbug
 {
-  position: sticky;
-  border: 5px solid #000;
-  width: 100%;
-  background-color: black;
-  bottom: 0;
-  color: rgb(200, 255, 100);
+  width: 90%;
+}
+
+.breadbug2, #title
+{
+  height: 64px;
+}
+
+.paragraph
+{
+  background-color: white;
+  margin-bottom: 12px;
 }
 
 a
 {
-  color: rgb(85, 157, 255);
-}
-
-
-{
-  color: blue;
+  color: rgb(32, 173, 163);
 }
 
 .link_list, h1, h2, h3, h4, h5, h6
 {
   font-family: "Comic Sans MS", sans-serif;
-  color: rgb(200, 255, 100);
+  //color: rgb(200, 255, 100);
 }
 
 .screenshot, .cat, .cat2
 {
-  border: 3px solid;
-  border-color: rgb(200, 255, 100);
+  border: 6px;
+  border-style: solid;
+  border-radius: 16px;
+  border-color: rgb(32, 173, 163);
+  filter: drop-shadow(4px 4px 2px black);
+  margin: 4px;
 }
 
 .screenshot
@@ -89,15 +106,10 @@ a
 
 .cat2
 {
-  width: 70%;
+  width: 83%;
 }
 
 #cat_gallery
-{
-  width: 80%;
-}
-
-@media only screen and (max-width: 600px) 
 {
   .content, #cat_gallery
   {
@@ -127,42 +139,79 @@ a
  /* Style the button that is used to open and close the collapsible content */
 .collapsible {
   background-color: black;
+  background-color: white;
   font-family: "Comic Sans MS", sans-serif;
   font-weight: bold;
-  color: rgb(200, 255, 100);
   cursor: pointer;
-  padding: 18px;
+  padding: 12px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
   font-size: 24px;
+  border-radius: 16px;
+  margin-bottom: 12px;
 }
 
 /*https://www.w3schools.com/howto/howto_js_collapsible.asp*/
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
-  background-color: rgb(10,10,10);
+  background-color: rgb(32, 173, 163);
 }
 
 /* Style the collapsible content. Note: hidden by default */
 .collapsible-content 
 {
-  padding: 0 18px;
+  padding: 16px;
   display: none;
   overflow: hidden;
-  background-color: black;
+  background-color: white;
   text-align: left;
+  margin-bottom: 12px;
 } 
 
 .collapsible:after {
   content: '∨'; /* Unicode character for "plus" sign (+) */
-
-
   float: right;
   margin-left: 5px;
 }
 
 .active:after {
   content: '∧'; /* Unicode character for "minus" sign (-) */
+}
+
+@media only screen and (max-height: 850px) 
+{
+  
+}
+
+@media only screen and (max-width: 600px) 
+{
+    .main
+  {
+    display:block;
+    padding: 0px;
+    font-size: 18px;
+  }
+
+  
+  #title
+  {
+    width: 70%;
+    height: auto;
+  }
+  
+  .nav, .content, #cat_gallery
+  {
+    margin: auto;
+    width: 90%;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .nav_offset
+  {
+    display: none;
+  }
+
 }
