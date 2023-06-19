@@ -7,6 +7,10 @@ body
   color: black;
   padding: 12px;
   overflow: visible;
+  
+  background-image: url("Assets/background.png");
+  background-repeat: repeat;
+  background-size: 4em;
 }
 
 div
@@ -19,11 +23,12 @@ div
   background-color: rgb(255, 112, 47);
   border-radius: 16px;
   padding: 12px;
+  
 }
 
 .main
 {
-  background-color: rgb(118, 45, 185);
+  background-color: transparent;
   width: 99%;
   display: flex;
 
@@ -37,6 +42,10 @@ div
   height: 1%;  
   filter: drop-shadow(8px 8px 4px black);
   padding-bottom: 0px;
+  
+    background-image: url("Assets/background1.png");
+  background-repeat: repeat;
+  background-size: 4em;
 }
 
 .nav_offset
@@ -45,7 +54,7 @@ div
   margin-left: 24px;
   width: 16%;
   height: 1%;
-  background-color: rgb(118, 45, 185);
+  background-color: transparent;
 }
 
 .content
@@ -109,10 +118,7 @@ a
   width: 83%;
 }
 
-#cat_gallery
-{
-  width: 40%;
-}
+
 
  /* Style the button that is used to open and close the collapsible content */
 .collapsible {
@@ -186,9 +192,8 @@ a
     margin-bottom: 12px;
   }
   
-  .nav_offset
+  .nav_offset, .breadbug2
   {
     display: none;
   }
-
 }
