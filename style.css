@@ -1,10 +1,19 @@
-@import url("style.css");
+@import url('https://unpkg.com/@catppuccin/palette/css/catppuccin.css');
+:root
+{
+  --colour_back: var(--ctp-mocha-mantle);
+  --colour_front: var(--ctp-mocha-surface1);
+  --colour_accent: var(--ctp-mocha-peach);
+  --colour_text: var(--ctp-mocha-text);
+  --colour_para: var(--ctp-mocha-surface2);
+}
+
 body 
 {
-  background-color: rgb(118, 45, 185);
+  background-color: var(--colour_back);
   font-family: "Roboto Slab", sans-serif;
   font-size: 24px;
-  color: black;
+  color: var(--colour_text);
   padding: 12px;
   overflow: visible;
   
@@ -19,8 +28,7 @@ div
   text-align: center;
   left: 0;
   right: 0;
-  //padding: -10px;
-  background-color: rgb(255, 112, 47);
+  background-color: var(--colour_front);
   border-radius: 16px;
   padding: 12px;
   
@@ -31,7 +39,6 @@ div
   background-color: transparent;
   width: 99%;
   display: flex;
-
 }
 
 .nav
@@ -42,10 +49,6 @@ div
   height: 1%;  
   filter: drop-shadow(8px 8px 4px black);
   padding-bottom: 0px;
-  
-    background-image: url("Assets/background1.png");
-  background-repeat: repeat;
-  background-size: 4em;
 }
 
 .nav_offset
@@ -64,6 +67,7 @@ div
   line-height: 1.1;
   filter: drop-shadow(8px 8px 4px black);
   padding-bottom: 0px;
+  
 }
 
 #breadbug
@@ -76,21 +80,39 @@ div
   height: 64px;
 }
 
+#breadbug3
+{
+  width: 80%;
+}
+
 .paragraph
 {
-  background-color: white;
+  background-color: var(--colour_para);
   margin-bottom: 12px;
 }
 
 a
 {
-  color: rgb(32, 173, 163);
+  color: var(--colour_accent);
 }
 
 .link_list, h1, h2, h3, h4, h5, h6
 {
   font-family: "Comic Sans MS", sans-serif;
-  //color: rgb(200, 255, 100);
+}
+
+.header
+{
+  display:flex;
+}
+
+h1
+{
+  color: var(--colour_accent);
+  font-size: 2em;
+  height: 64px;
+  width: 60%;
+  margin: auto;
 }
 
 .screenshot, .cat, .cat2
@@ -98,7 +120,7 @@ a
   border: 6px;
   border-style: solid;
   border-radius: 16px;
-  border-color: rgb(32, 173, 163);
+  border-color: var(--colour_accent);
   filter: drop-shadow(4px 4px 2px black);
   margin: 4px;
 }
@@ -110,19 +132,13 @@ a
 
 .cat
 {
-  width: 40%;
+  width: 90%;
 }
-
-.cat2
-{
-  width: 83%;
-}
-
-
 
  /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-  background-color: white;
+  background-color: var(--colour_para);
+  color: var(--colour_text);
   font-family: "Comic Sans MS", sans-serif;
   font-weight: bold;
   cursor: pointer;
@@ -139,7 +155,8 @@ a
 /*https://www.w3schools.com/howto/howto_js_collapsible.asp*/
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
-  background-color: rgb(32, 173, 163);
+  background-color: var(--colour_accent);
+  color: var(--colour_para);
 }
 
 /* Style the collapsible content. Note: hidden by default */
@@ -148,7 +165,7 @@ a
   padding: 16px;
   display: none;
   overflow: hidden;
-  background-color: white;
+  background-color: var(--colour_para);
   text-align: left;
   margin-bottom: 12px;
 } 
@@ -195,5 +212,10 @@ a
   .nav_offset, .breadbug2
   {
     display: none;
+  }
+  
+  .cat
+  {
+    width: 80%;
   }
 }
