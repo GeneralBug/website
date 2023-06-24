@@ -218,4 +218,10 @@ h1
   {
     width: 80%;
   }
+  
+  h1
+  {
+    width: auto;
+    height: auto;
+  }
 }
