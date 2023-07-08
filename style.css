@@ -197,12 +197,29 @@ h3
   content: '∧'; /* Unicode character for "minus" sign (-) */
 }
 
-@media only screen and (max-height: 850px) 
+@media only screen and (max-width: 1710px) 
 {
-  
+  h1
+  {
+    width: auto;
+  }    
+  .nav
+  {
+    margin-left: auto;
+    width: 20%;
+  }
+  .nav_offset
+  {
+    margin-right: auto;
+    width: 20%;
+  }
+  .content, #cat_gallery
+  {
+    width: 50%;
+  }
 }
 
-@media only screen and (max-width: 600px) 
+@media only screen and (max-width: 810px) 
 {
     .main
   {
@@ -241,4 +258,10 @@ h3
     width: auto;
     height: auto;
   }
+  
+
+  
 }
+  
+
+
