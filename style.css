@@ -89,6 +89,7 @@ div
 {
   background-color: var(--colour_para);
   margin-bottom: 12px;
+  padding: 2px;
 }
 
 a
@@ -96,7 +97,7 @@ a
   color: var(--colour_accent);
 }
 
-.link_list, h1, h2, h3, h4, h5, h6
+.link_list, h1, h4, h5, h6
 {
   font-family: "Comic Sans MS", sans-serif;
 }
@@ -113,6 +114,22 @@ h1
   height: 64px;
   width: 60%;
   margin: auto;
+}
+
+h2, h3
+{
+  padding: 0px;
+  margin: 6px;
+}
+
+h2
+{
+  font-size: 1em;
+}
+
+h3
+{
+  font-size: 1.2em;
 }
 
 .screenshot, .cat, .cat2
