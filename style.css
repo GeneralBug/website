@@ -22,6 +22,13 @@ body
   background-size: 4em;
 }
 
+ol
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 div
 {
   float: none;
@@ -153,7 +160,7 @@ h3
 }
 
  /* Style the button that is used to open and close the collapsible content */
-.collapsible {
+.collapsible, .sorting {
   background-color: var(--colour_para);
   color: var(--colour_text);
   font-family: "Comic Sans MS", sans-serif;
@@ -171,7 +178,7 @@ h3
 
 /*https://www.w3schools.com/howto/howto_js_collapsible.asp*/
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
+.active, .collapsible:hover, .sorting:hover {
   background-color: var(--colour_accent);
   color: var(--colour_para);
 }
