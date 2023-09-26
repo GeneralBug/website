@@ -197,6 +197,14 @@ h3
   content: '∧'; /* Unicode character for "minus" sign (-) */
 }
 
+.link_icon
+{
+  width: 48px;
+  padding: 2px; 
+  /*Keep pressing the button until it gets it perfect, invert the inversion for white image: https://codepen.io/sosuke/pen/Pjoqqp*/
+  filter: invert(30%) sepia(33%) saturate(495%) hue-rotate(337deg) brightness(103%) contrast(96%);
+}
+
 @media only screen and (max-width: 1710px) 
 {
   h1
