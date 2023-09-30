@@ -160,7 +160,7 @@ h3
 }
 
  /* Style the button that is used to open and close the collapsible content */
-.collapsible, .sorting {
+.collapsible, .sorting, #sort_button {
   background-color: var(--colour_para);
   color: var(--colour_text);
   font-family: "Comic Sans MS", sans-serif;
@@ -178,7 +178,7 @@ h3
 
 /*https://www.w3schools.com/howto/howto_js_collapsible.asp*/
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover, .sorting:hover {
+.active, .collapsible:hover, .sorting:hover, #sort_button:hover {
   background-color: var(--colour_accent);
   color: var(--colour_para);
 }
@@ -210,6 +210,14 @@ h3
   padding: 2px; 
   /*Keep pressing the button until it gets it perfect, invert the inversion for white image: https://codepen.io/sosuke/pen/Pjoqqp*/
   filter: invert(30%) sepia(33%) saturate(495%) hue-rotate(337deg) brightness(103%) contrast(96%);
+}
+
+#sort_button
+{
+  width: 60%;
+  font-size: 18px;
+  text-align: center;
+  background-color: var(--colour_front);
 }
 
 @media only screen and (max-width: 1710px) 

@@ -33,8 +33,10 @@
                     As an exercise intended to improve my own design abilities by analysing other games, I started writing these little "review" things when I play a game (though I don't want them to be reviews, some get more "review-y" than others). They aren't really meant for others, so some of them are very rambly and possibly incomprehensible, so read them at your own risk.
                     <br>
                     <br>
-                    Also they're listed with the system I played it on and my general feelings about it (positive/negative). I only started dating them in April 2023, but the earliest are from about 2020, if I remember correctly. I plan to make the list sortable, currently it's just alphabetical.                
+                    Also they're listed with the system I played it on and my general feelings about it (positive/negative). I only started dating them in April 2023, but the earliest are from about 2020, if I remember correctly.              
                     <br>
+                    <br>
+                    <button id="sort_button" onclick="sortList()"></button>
                 </p>
             </div>
             <ol id = "notes_list">
@@ -46,6 +48,10 @@
 </body>
   
 <script>
+    var sortType = "platform";
+    var sortButton = document.getElementById("sort_button");
+    var notesList = document.getElementById("notes_list");
+
     populate_list();
 
     function populate_list()
@@ -53,14 +59,13 @@
         //function for populating the list from json, based on https://stackoverflow.com/questions/28256271/populate-ul-in-html-with-json-data
         $.getJSON('/Assets/notes.json', function (data) 
         {
-            var ul = document.getElementById("notes_list");
-    
             for( var i = 0; i < data.length; i++ )
             { 
                 var o = data[i];
                 //console.log(o);
                 var li = document.createElement("li");
                 li.classList.add("sortable");
+                li.setAttribute("id", o.order);
                 //button
                 var header = document.createElement("button");
                 header.classList.add("collapsible");
@@ -98,44 +103,112 @@
                 
                 li.appendChild(header);
                 li.appendChild(body);
-                ul.appendChild(li);
+                notesList.appendChild(li);
             }                   
-        sortList(ul);
+            sortList();
         });
 
     }
     
-    function sortList(list) 
+    function sortList() 
     {
-        //https://www.w3schools.com/howto/howto_js_sort_list.asp
-        //TODO: sort by date, platform
+        //based on https://www.w3schools.com/howto/howto_js_sort_list.asp
+        sortButton.setAttribute("disabled", true);
+
         console.log("running sort");
         var i, switching, b, shouldSwitch;
         switching = true;
+
+        switch(sortType)
+        {
+        case "date":
+            sortType = "name";
+            break;
+        case "name":
+            sortType = "platform";
+            break;
+        case "platform":
+            sortType = "date";
+            break;
+        default:
+            sortType = "date";
+        }
+        sortButton.innerHTML = "Sorting by " + sortType;
+
         while (switching) 
         {
             switching = false;
-            b = list.getElementsByClassName("sortable");
+            b = notesList.getElementsByClassName("sortable");
             console.log(b.length);
-            for (i = 0; i < (b.length - 1); i++) 
-            {
-                shouldSwitch = false;
-                if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) 
+            switch(sortType)
+            //TODO: yucky, this can almost certainly be shrunk but i cant be fucked
                 {
-                    /* If next item is alphabetically lower than current item,
-                    mark as a switch and break the loop: */
-                    shouldSwitch = true;
+                case "name":
+                    for (i = 0; i < (b.length - 1); i++) 
+                    {
+                        shouldSwitch = false;
+                        if (b[i].innerHTML.substring(b[i].innerHTML.indexOf(">"), b[i].innerHTML.indexOf("(")).toLowerCase() > b[i+1].innerHTML.substring(b[i+1].innerHTML.indexOf(">"), b[i+1].innerHTML.indexOf("(")).toLowerCase()) 
+                        {
+                            /* If next item is alphabetically lower than current item,
+                            mark as a switch and break the loop: */
+                            shouldSwitch = true;
+                            break;
+                        }
+                    }
+                    if (shouldSwitch) 
+                    {
+                        /* If a switch has been marked, make the switch
+                        and mark the switch as done: */
+                        b[i].parentNode.insertBefore(b[i + 1], b[i]);
+                        switching = true;
+                    }
                     break;
+                case "date":
+                    for (i = 0; i < (b.length - 1); i++) 
+                    {
+                        shouldSwitch = false;
+                        if (b[i].id < b[i + 1].id) 
+                        {
+                            /* If next item is alphabetically lower than current item,
+                            mark as a switch and break the loop: */
+                            shouldSwitch = true;
+                            break;
+                        }
+                    }
+                    if (shouldSwitch) 
+                    {
+                        /* If a switch has been marked, make the switch
+                        and mark the switch as done: */
+                        b[i].parentNode.insertBefore(b[i + 1], b[i]);
+                        switching = true;
+                    }
+                    break;
+                case "platform":
+                    for (i = 0; i < (b.length - 1); i++) 
+                    {
+                        shouldSwitch = false;
+                        if (b[i].innerHTML.substring(b[i].innerHTML.indexOf("("), b[i].innerHTML.indexOf(")")).toLowerCase() > b[i+1].innerHTML.substring(b[i+1].innerHTML.indexOf("("), b[i+1].innerHTML.indexOf(")")).toLowerCase()) 
+                        {
+                            /* If next item is alphabetically lower than current item,
+                            mark as a switch and break the loop: */
+                            shouldSwitch = true;
+                            break;
+                        }
+                    }
+                    if (shouldSwitch) 
+                    {
+                        /* If a switch has been marked, make the switch
+                        and mark the switch as done: */
+                        b[i].parentNode.insertBefore(b[i + 1], b[i]);
+                        switching = true;
+                    }
+                    break;
+                default:
+                    console.log("sortList got an invalid sortType, woopsie doodle!");
                 }
-            }
-            if (shouldSwitch) 
-            {
-                /* If a switch has been marked, make the switch
-                and mark the switch as done: */
-                b[i].parentNode.insertBefore(b[i + 1], b[i]);
-                switching = true;
-            }
+
         }
+        sortButton.removeAttribute("disabled");
     }
 </script>
   
