@@ -398,5 +398,13 @@
 		"date"		: "November 2023",
 		"order"		: "049",	
 		"notes"		: "Manic Miners is a fan remake of LEGO Rock Raiders, and is pretty good. Now, I've only played the original as a kid (where I was too dumb and scared to get very far) and briefly somewhat recently when I got it running on Windows 10. For the latter, my main issue was that it was super micromanage-y and painfully slow, both of which are still issues with Manic Miners but to a far lesser degree, as the developers put a fair bit of effort into improving the game. For example, you can now adjust the game speed up to 3x which is great, but you have to do it from within the options menu. Your guys will automatically train themselves for tasks as needed rather than needing you to tell them to learn first. Talking about the improvements is a bit hard, since I'm not sure what is and isn't new; for example, there's a lava-spread mechanic which I don't remember at all which might be new. Same with manually controlling lasers, or controlling individual miners for that matter. On another note, the extensive options available are great; you can turn off most mechanics, which would be great for stuff like the oxygen thing that is likely to turn a lot of people off. Also the character creator is a great addition that I didn't know I needed.<br><br>Overall, it's certainly the best version of the game, though it's still pretty slow and easy (the first campaign is, at least)."
+	},
+	{
+		"title" 	: "Try Again",
+		"platform"	: "PC",
+		"feel"		: "Positive",
+		"date"		: "November 2023",
+		"order"		: "050",	
+		"notes"		: "SUPER short, surprisingly so. Only comment on the feel is that the wall jump parts feel super weird for some reason. Also it feels like you should be able to swing on the swingy poles but you can't. Very nice!"
 	}
 ]
