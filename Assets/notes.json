@@ -406,5 +406,13 @@
 		"date"		: "November 2023",
 		"order"		: "050",	
 		"notes"		: "SUPER short, surprisingly so. Only comment on the feel is that the wall jump parts feel super weird for some reason. Also it feels like you should be able to swing on the swingy poles but you can't. Very nice!"
+	},
+	{
+		"title" 	: "Wargroove",
+		"platform"	: "PC",
+		"feel"		: "Positive",
+		"date"		: "December 2023",
+		"order"		: "051",	
+		"notes"		: "Another that I could have sworn I'd already written about, but I guess not. I've never played Advance Wars, but I think I'd like it if it's anything like this. I especially appreciate the variety of difficulty options available for the campaign; options are cool! I only really have three main issues. First is a lack of \"highlight enemy range\" button found in (at least) the 3DS Fire Emblems; you can both press a button to toggle all enemy ranges in purple, as well as highlight specific units in red; here you can see a unit's range when hovering over them, and that's it. Second is a little nitpicky thing that I also got in the habit of from Fire Emblem; when you select a unit to move move it to another to attack it, it will just choose whichever tile is closest rather than the tile you moved your cursor in from, if that makes sense. Instead you have to move them to the tile you want, then select attack (bad). Finally is a general issue with this style of game, which Wargroove goesn't do anything to alleviate. It's extremely easy to get half an hour into a level, everythings going great, when suddenly enemy reinforcements spawn next to your commander and kill them in a single round, forcing you to restart completely. Or even just mispositioning them due to points 1 or 2, making them vulnerable to stuff they shouldn't be. It always feels really shitty and makes me not want to try again. "
 	}
 ]
