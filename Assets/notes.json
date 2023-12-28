@@ -414,5 +414,21 @@
 		"date"		: "December 2023",
 		"order"		: "051",	
 		"notes"		: "Another that I could have sworn I'd already written about, but I guess not. I've never played Advance Wars, but I think I'd like it if it's anything like this. I especially appreciate the variety of difficulty options available for the campaign; options are cool! I only really have three main issues. First is a lack of \"highlight enemy range\" button found in (at least) the 3DS Fire Emblems; you can both press a button to toggle all enemy ranges in purple, as well as highlight specific units in red; here you can see a unit's range when hovering over them, and that's it. Second is a little nitpicky thing that I also got in the habit of from Fire Emblem; when you select a unit to move move it to another to attack it, it will just choose whichever tile is closest rather than the tile you moved your cursor in from, if that makes sense. Instead you have to move them to the tile you want, then select attack (bad). Finally is a general issue with this style of game, which Wargroove goesn't do anything to alleviate. It's extremely easy to get half an hour into a level, everythings going great, when suddenly enemy reinforcements spawn next to your commander and kill them in a single round, forcing you to restart completely. Or even just mispositioning them due to points 1 or 2, making them vulnerable to stuff they shouldn't be. It always feels really shitty and makes me not want to try again. "
+	},
+	{
+		"title" 	: "Scoot Kaboom and the Tomb of Doom",
+		"platform"	: "PC",
+		"feel"		: "Neutral",
+		"date"		: "December 2023",
+		"order"		: "052",	
+		"notes"		: "It's fine, I guess? The main thing I struggle with in platformers is timed stuff that isn't tied to your actions (for example, the ghost goo from the hotel level in Celeste), which this game is jam-packed with. Worse though is that different elements, even when used together, aren't synconised with each other, nor with the music so for some bits it was just a matter of running blindly into it until you get lucky. Unless you're good at timing stuff, probably."
+	},
+	{
+		"title" 	: "Divinity: Original Sin 2",
+		"platform"	: "PC",
+		"feel"		: "Neutral",
+		"date"		: "December 2023",
+		"order"		: "053",	
+		"notes"		: "Pretty good overall. Not having stuff locked behind classes was a very good call, especially since it wasn't super clear what some of them were in character creation, but respecing is easy. Gameplay wise I have a few complaints:<ul><li>The game doesn't autosave nearly enough, so you really need to get into the habit of quicksaving or risk having to redo a few combat encounters (why wouldn't it autosave when you leave combat?)<li>It's VERY easy to miss-input in combat; placing the cursor over an enemy can be finicky and pressing right on the D pad (which you'd do to navigate the hotbar) activates \"attack mode\" so it's easy to accidentally waste a bunch of action points just smacking the ground for no reason.<li>The default actions associated with some objects are baffling; I couldn't tell you how many times I've tried to open an oil barrel thinking it was a container only to pick it up because that's a thing literally anyone has ever wanted to do I guess? And when I go to drop it it assumes I want to CRAFT with it??<li>Not so much a complaint and I get why it's like it is but a part of me really wishes it was on a grid. Maybe I'm just too used to Fire Emblem and stuff<li>The quest journal sucks</ul>But yeah, it's pretty good. Also positioning is way more important than I expected it to be which is cool but also means literally everyone you enounter as some kind of teleport power and you're kind of fucked if you don't."
 	}
 ]
