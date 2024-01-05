@@ -16,7 +16,6 @@ body
   color: var(--colour_text);
   padding: 12px;
   overflow: visible;
-  
   background-image: url("Assets/background.png");
   background-repeat: repeat;
   background-size: 4em;
@@ -35,46 +34,31 @@ div
   text-align: center;
   left: 0;
   right: 0;
-  background-color: var(--colour_front);
-  border-radius: 16px;
+
+
   padding: 12px;
   
 }
 
-.main
-{
-  background-color: transparent;
-  width: 99%;
-  display: flex;
-}
-
 .nav
 {
-  margin-left:auto;
-  margin-right: 24px;
+  background-color: var(--colour_front);
+  position: fixed;
   width: 16%;
-  height: 1%;  
+  height: 100%;  
   filter: drop-shadow(8px 8px 4px black);
   padding-bottom: 0px;
-}
-
-.nav_offset
-{
-  margin-right:auto;
-  margin-left: 24px;
-  width: 16%;
-  height: 1%;
-  background-color: transparent;
+  top: 0;
 }
 
 .content
 {
-  width: 35%;
-  height: 1%;
+  margin:auto;
+  width: 40%;
   line-height: 1.1;
   filter: drop-shadow(8px 8px 4px black);
   padding-bottom: 0px;
-  
+  top: 0;
 }
 
 #breadbug
@@ -89,22 +73,45 @@ div
 
 #breadbug3
 {
-  width: 80%;
+  width: 75%;
 }
 
 .paragraph
 {
-  background-color: var(--colour_para);
+  background-color: var(--colour_front);
   margin-bottom: 12px;
-  padding: 2px;
+  padding: 12px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 a
 {
   color: var(--colour_accent);
+  text-decoration-thickness: 1px;
 }
 
-.link_list, h1, h4, h5, h6
+.link_button, .link_button2
+{
+  font-size: 2em;
+  font-family: "Comic Sans MS", sans-serif;
+  padding: 8px;
+  background-color: var(--colour_para);
+  margin: 8px;
+  border-radius: 16px;
+}
+
+.link_button2
+{
+  font-size: 1.5em;
+  padding: 16px;
+  width: 40%;
+}
+
+h1, h4, h5, h6
 {
   font-family: "Comic Sans MS", sans-serif;
 }
@@ -205,8 +212,8 @@ h3
 }
 
 .link_icon
-{
-  width: 48px;
+{  
+  width: 64px;
   padding: 2px; 
   /*Keep pressing the button until it gets it perfect, invert the inversion for white image: https://codepen.io/sosuke/pen/Pjoqqp*/
   filter: invert(30%) sepia(33%) saturate(495%) hue-rotate(337deg) brightness(103%) contrast(96%);
@@ -222,20 +229,18 @@ h3
 
 @media only screen and (max-width: 1710px) 
 {
+  .link_button, .link_button2
+  {
+    width: auto;
+    font-size: 1em;
+    min-width: 40%;
+  }    
   h1
   {
     width: auto;
-  }    
-  .nav
-  {
-    margin-left: auto;
-    width: 20%;
+    font-size: 2em;
   }
-  .nav_offset
-  {
-    margin-right: auto;
-    width: 20%;
-  }
+
   .content, #cat_gallery
   {
     width: 50%;
@@ -244,14 +249,6 @@ h3
 
 @media only screen and (max-width: 810px) 
 {
-    .main
-  {
-    display:block;
-    padding: 0px;
-    font-size: 18px;
-  }
-
-  
   #title
   {
     width: 70%;
@@ -260,13 +257,17 @@ h3
   
   .nav, .content, #cat_gallery
   {
+    display: block;
+    padding: 0px;
+    position: relative;
     margin: auto;
     width: 90%;
     padding-bottom: 12px;
     margin-bottom: 12px;
+    border-radius: 16px;      
   }
-  
-  .nav_offset, .breadbug2
+
+  .breadbug2
   {
     display: none;
   }
@@ -282,8 +283,11 @@ h3
     height: auto;
   }
   
-
-  
+  body  
+  {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
   
 
