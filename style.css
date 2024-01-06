@@ -34,10 +34,7 @@ div
   text-align: center;
   left: 0;
   right: 0;
-
-
   padding: 12px;
-  
 }
 
 .nav
@@ -85,6 +82,11 @@ div
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.paragraph_row
+{
+  display: block;
 }
 
 a
@@ -213,7 +215,7 @@ h3
 .link_icon
 {  
   width: 64px;
-  padding: 2px; 
+  padding: 8px;
   /*Keep pressing the button until it gets it perfect, invert the inversion for white image: https://codepen.io/sosuke/pen/Pjoqqp*/
   filter: invert(30%) sepia(33%) saturate(495%) hue-rotate(337deg) brightness(103%) contrast(96%);
 }
@@ -223,7 +225,7 @@ h3
   width: 60%;
   font-size: 18px;
   text-align: center;
-  background-color: var(--colour_front);
+  background-color: var(--colour_para);
 }
 
 @media only screen and (max-width: 1710px) 
