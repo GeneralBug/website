@@ -200,6 +200,7 @@ h3
   background-color: var(--colour_para);
   text-align: left;
   margin-bottom: 12px;
+  border-radius: 16px;  
 } 
 
 .collapsible:after {
