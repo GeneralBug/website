@@ -430,5 +430,13 @@
 		"date"		: "December 2023",
 		"order"		: "053",	
 		"notes"		: "Pretty good overall. Not having stuff locked behind classes was a very good call, especially since it wasn't super clear what some of them were in character creation, but respecing is easy. Gameplay wise I have a few complaints:<ul><li>The game doesn't autosave nearly enough, so you really need to get into the habit of quicksaving or risk having to redo a few combat encounters (why wouldn't it autosave when you leave combat?)<li>It's VERY easy to miss-input in combat; placing the cursor over an enemy can be finicky and pressing right on the D pad (which you'd do to navigate the hotbar) activates \"attack mode\" so it's easy to accidentally waste a bunch of action points just smacking the ground for no reason.<li>The default actions associated with some objects are baffling; I couldn't tell you how many times I've tried to open an oil barrel thinking it was a container only to pick it up because that's a thing literally anyone has ever wanted to do I guess? And when I go to drop it it assumes I want to CRAFT with it??<li>Not so much a complaint and I get why it's like it is but a part of me really wishes it was on a grid. Maybe I'm just too used to Fire Emblem and stuff<li>The quest journal sucks</ul>But yeah, it's pretty good. Also positioning is way more important than I expected it to be which is cool but also means literally everyone you enounter as some kind of teleport power and you're kind of fucked if you don't."
+	},
+	{
+		"title" 	: "Shutter Stroll",
+		"platform"	: "PC",
+		"feel"		: "Positive",
+		"date"		: "January 2024",
+		"order"		: "054",	
+		"notes"		: "Very nice, actually. My only complaint is that there aren't more scenery prop things, like little houses or something (as far as I know at least). I haven't wanted to include pictures in these until now, but I feel like it would be weird not to in this case, so here are some of the photos I took.<br><img class=\"notes_picture\" src=\"Assets/Notes/Shutter Stroll/1.png\" alt=\"Photo taken in Shutter Stroll\"><img class=\"notes_picture\" src=\"Assets/Notes/Shutter Stroll/2.png\" alt=\"Photo taken in Shutter Stroll\"><img class=\"notes_picture\" src=\"Assets/Notes/Shutter Stroll/3.png\" alt=\"Photo taken in Shutter Stroll\"><img class=\"notes_picture\" src=\"Assets/Notes/Shutter Stroll/4.png\" alt=\"Photo taken in Shutter Stroll\">"
 	}
 ]
