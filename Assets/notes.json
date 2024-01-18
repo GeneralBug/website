@@ -438,5 +438,21 @@
 		"date"		: "January 2024",
 		"order"		: "054",	
 		"notes"		: "Very nice, actually. My only complaint is that there aren't more scenery prop things, like little houses or something (as far as I know at least). I haven't wanted to include pictures in these until now, but I feel like it would be weird not to in this case, so here are some of the photos I took.<br><img class=\"notes_picture\" src=\"Assets/Notes/Shutter Stroll/1.png\" alt=\"Photo taken in Shutter Stroll\"><img class=\"notes_picture\" src=\"Assets/Notes/Shutter Stroll/2.png\" alt=\"Photo taken in Shutter Stroll\"><img class=\"notes_picture\" src=\"Assets/Notes/Shutter Stroll/3.png\" alt=\"Photo taken in Shutter Stroll\"><img class=\"notes_picture\" src=\"Assets/Notes/Shutter Stroll/4.png\" alt=\"Photo taken in Shutter Stroll\">"
+	},
+	{
+		"title" 	: "Portal: Revolution",
+		"platform"	: "PC",
+		"feel"		: "Positive",
+		"date"		: "January 2024",
+		"order"		: "055",	
+		"notes"		: "It's Portal! I really liked the new mechanics they added, especially the laser teleport cube thing (and I appreciate that they removed laser damage). The puzzles were all a pretty good balance difficulty wise; I only got stuck enough to look up the solution once and it was super obvious once you see it. My only complaint is that the dialogue volumn is VERY loud and can't be adjusted separately, so I had to play the whole game with very quiet everything except talking. It's been too long since I played either vanilla game or some other mods to properly compare them. I found the opening \"tutorial\" section interesting, since it reintroduces most of the vanilla mechanics in rapid succession, clearly counting on the player to already be familiar with them; that's probably reasonable given that this is a mod, but interesting none the less. Also of note is that they used the \"despawning cubes to unpress buttons and stuff\" thing as an intended part of puzzles, which I only noticed because I saw a video talking about how it's used a lot in workshop levels but never in any vanilla puzzles."
+	},
+	{
+		"title" 	: "Lethal Company",
+		"platform"	: "PC",
+		"feel"		: "Positive",
+		"date"		: "January 2024",
+		"order"		: "056",	
+		"notes"		: "This seems like it would be the opposite of what I like but I like it anyway. Everything feeds into the shitty, oppressive setting and atmophere like the equipment sucking and the various VC filters and the crusty graphics and it all just comes together so nicely. The game's main weakness is the limited content, most notably rooms and stuff for inside the factory thing (and mansion, which I've only seen once and is currently the only other \"theme\"), but I've no doubt that they'll keep updating it for quite awhile, especially given it's popularity."
 	}
 ]

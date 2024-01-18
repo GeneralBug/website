@@ -203,7 +203,7 @@ h3
   display: none;
   overflow: hidden;
   background-color: var(--colour_para);
-  text-align: center;
+  text-align: left;
   margin-bottom: 12px;
   border-radius: 16px;  
 } 
@@ -232,6 +232,12 @@ h3
   font-size: 18px;
   text-align: center;
   background-color: var(--colour_para);
+}
+
+.left_justified
+{
+  display: block;
+  text-align: left;
 }
 
 @media only screen and (max-width: 1710px) 
