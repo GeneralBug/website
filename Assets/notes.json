@@ -453,6 +453,38 @@
 		"feel"		: "Positive",
 		"date"		: "January 2024",
 		"order"		: "056",	
-		"notes"		: "This seems like it would be the opposite of what I like but I like it anyway. Everything feeds into the shitty, oppressive setting and atmophere like the equipment sucking and the various VC filters and the crusty graphics and it all just comes together so nicely. The game's main weakness is the limited content, most notably rooms and stuff for inside the factory thing (and mansion, which I've only seen once and is currently the only other \"theme\"), but I've no doubt that they'll keep updating it for quite awhile, especially given it's popularity."
+		"notes"		: "This seems like it would be the opposite of what I like but I like it anyway. Everything feeds into the shitty, oppressive setting and atmophere like the equipment sucking and the various VC filters and the crusty graphics and it all just comes together so nicely. The game's main weakness is the limited content, most notably rooms and stuff for inside the factory thing (and mansion, which I've only seen once and is currently the only other \"theme\"), but I've no doubt that they'll keep updating it for quite awhile, especially given it's popularity.	"
+	},
+	{
+		"title" 	: "Doom",
+		"platform"	: "PC",
+		"feel"		: "Neutral",
+		"date"		: "January 2024",
+		"order"		: "057",	
+		"notes"		: "Another one I played awhile ago and just forgot to write about. The lack of vertical camera movement feels super weird, but isn't a huge problem. It's usually hard to tell what a switch is doing or how certain stuff is activated, to the point that some areas that probably aren't supposed to be puzzles feel a lot like them. The lack of autosaving at the start of each level is dumb, since there's no reason not to quicksave and load there to keep your items, so they may as well just do that automatically. Still quite fun and interesting technologically."
+	},
+	{
+		"title" 	: "shapez",
+		"platform"	: "PC",
+		"feel"		: "Positive",
+		"date"		: "January 2024",
+		"order"		: "058",	
+		"notes"		: "It's really nice, if a little clunky. Placing stuff down (especially belts) is a bit more cumbersome than Factorio. Also I feel like it doesn't really go anywhere beyond assembling shapes of ever increasing complexity, unless there's some final shape you need to make at the very end; after you start stacking, every shape is pretty much the same process with a few more modules. Also it's weird that it takes so long to unlock copy-pasting."
+	},
+	{
+		"title" 	: "Doom 64",
+		"platform"	: "PC",
+		"feel"		: "Neutral",
+		"date"		: "January 2024",
+		"order"		: "059",	
+		"notes"		: "Similar to regular Doom, so just insert everything I said about that game here as well. Of note is some of the lighting affects look really cool for an N64 game, but I don't know how much of that is new to the 2019 Steam version. Overall it's maybe better than Doom?"
+	},
+	{
+		"title" 	: "Celeste 64: Fragments of the Mountain",
+		"platform"	: "PC",
+		"feel"		: "Positive",
+		"date"		: "January 2024",
+		"order"		: "060",	
+		"notes"		: "These people just can't miss, huh? It's utterly delightful; very nice translation of the mechanics into 3D (though the climbing can be a big janky), lovely visuals and music and an excellent degree of difficulty. Just super fucking good. Not sure what happened to the other 62 entries though, possibly lost media?"
 	}
 ]
