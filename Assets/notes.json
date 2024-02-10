@@ -486,5 +486,29 @@
 		"date"		: "January 2024",
 		"order"		: "060",	
 		"notes"		: "These people just can't miss, huh? It's utterly delightful; very nice translation of the mechanics into 3D (though the climbing can be a big janky), lovely visuals and music and an excellent degree of difficulty. Just super fucking good. Not sure what happened to the other 62 entries though, possibly lost media?"
+	},
+	{
+		"title" 	: "LOVE",
+		"platform"	: "PC",
+		"feel"		: "Neutral",
+		"date"		: "January 2024",
+		"order"		: "061",	
+		"notes"		: "The checkpoint placement system is interesting. Otherwise pretty okay, I guess."
+	},
+	{
+		"title" 	: "Macbat 64",
+		"platform"	: "PC",
+		"feel"		: "Positive",
+		"date"		: "February 2024",
+		"order"		: "062",	
+		"notes"		: "It's cute! The addition of the infinite flight at the end with the little hidden stuff in each level is really neat. The audio is pretty scuffed though, and the camera goes a little wacky at times. A nice little thingo indeed!"
+	},
+	{
+		"title" 	: "Luigi's Mansion 3",
+		"platform"	: "PC",
+		"feel"		: "Positive",
+		"date"		: "February 2024",
+		"order"		: "063",	
+		"notes"		: "Who the FUCK could possibly have thought it was a good idea to give coins a 30 second despawn timer? There is no situation where it isn't just worse in every way than not having one. But beside that (and the long respawn times) it's pretty good. The level of polish is delightful. Overall I think Luigi's Mansion 1 might be better though, just because the map and level design are more compelling; I'm a bit disappointed this one wasn't more \"metroidvania-y\", but instead each floor (with the exception of the first bit with stairs) is a completely separate area."
 	}
 ]
