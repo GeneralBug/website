@@ -510,5 +510,29 @@
 		"date"		: "February 2024",
 		"order"		: "063",	
 		"notes"		: "Who the FUCK could possibly have thought it was a good idea to give coins a 30 second despawn timer? There is no situation where it isn't just worse in every way than not having one. But beside that (and the long respawn times) it's pretty good. The level of polish is delightful. Overall I think Luigi's Mansion 1 might be better though, just because the map and level design are more compelling; I'm a bit disappointed this one wasn't more \"metroidvania-y\", but instead each floor (with the exception of the first bit with stairs) is a completely separate area."
+	},
+	{
+		"title" 	: "Perfect Vermin",
+		"platform"	: "PC",
+		"feel"		: "Neutral",
+		"date"		: "February 2024",
+		"order"		: "064",	
+		"notes"		: "It's fine. I'm not sure it does a very good job of building or maintaining atmosphere, assuming that's the intention. Maybe my experience would be better if I didn't already know the premise? Also the hitting feels a little janky sometimes."
+	},
+	{
+		"title" 	: "Trip World",
+		"platform"	: "Gameboy",
+		"feel"		: "Positive",
+		"date"		: "February 2024",
+		"order"		: "065",	
+		"notes"		: "It's really good! The spritework is especially great; probably the best I've seen in a regular Gameboy game. The difficulty spike at the final boss is pretty brutal though. Interestingly, you can start from any world and checkpoint, so lives seem pretty pointless; they just waste a bit of extra time every fourth death. The only thing is that it resets your score, I guess?"
+	},
+	{
+		"title" 	: "Curse of the Crescent Isle DX",
+		"platform"	: "PC",
+		"feel"		: "Negative",
+		"date"		: "February 2024",
+		"order"		: "066",	
+		"notes"		: "It's a platformer taking after Super Mario Bros 2, but it's incredibly unpolished and buggy, unfortunately. It keeps making a loud audio-clipping sound, the controls feel weird, and the menus and cutscenes are very janky. All it's really got going for it is the really good artwork."
 	}
 ]
