@@ -542,5 +542,21 @@
 		"date"		: "March 2024",
 		"order"		: "067",	
 		"notes"		: "It's pretty cool! Definitely felt like there was a \"correct\" build, as using fire, for example, was just objectively worse than using ice. the visuals and stuff are very pretty too. The screen saver mode is fine until it decides to jerk around violently for a bit, which seems like an odd choice, but I like the concept."
+	},
+	{
+		"title" 	: "Metal Gear",
+		"platform"	: "Switch",
+		"feel"		: "Neutral",
+		"date"		: "April 2024",
+		"order"		: "068",	
+		"notes"		: "It's an interesting one. Overall it's quite good; the stealth is usually not too slow that you end up just running though enemies. The weapons also feel weak in a way that often disincentiveses attacking (though the hit detection on bullets can feel really poor sometimes, which may or may not be intentional so as to contribute to that weakness). Replenishing your consumables after enough deaths is also a very nice quality of life touch that I wouldn't have expected in a game from this time, but it definitely helps save on grinding that (at least I) would have needed to do at various points.<br><br>There are lots of very \"how would anyone figure this out without a walkthrough\" points though, like how to get the rocket launcher, which you need to kill a boss that isn't clearly indicated as being a boss and attacking them with it doesn't indicate that they're being hurt, unlike most other enemies. Maybe there were more situations where you could call someone and get directions like in the final area, but I didn't know to do that until much later anyway."
+	},
+	{
+		"title" 	: "Zoo Keeper",
+		"platform"	: "DS",
+		"feel"		: "Neutral",
+		"date"		: "April 2024",
+		"order"		: "069",	
+		"notes"		: "An interesting little match-three game. It's biggest strength is the graphics; it's got that really pretty DS pixel art with a very cute art style. The \"quest\" mode is complete bullshit, and the timer is quite stressful, enough to mean that you need to be in a particular mood to really enjoy it."
 	}
 ]
