@@ -240,6 +240,11 @@ h3
   text-align: left;
 }
 
+#viewcount, #updatedate
+{
+  color: var(--colour_accent);
+}
+
 @media only screen and (max-width: 1710px) 
 {
   .link_button, .link_button2

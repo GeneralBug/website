@@ -29,7 +29,11 @@
         <div class="link_button">
             <a href="links.html">Links</a>
         </div>
+        <p>
+            Last updated <span id="updatedate"></span>, with <span id="viewcount"></span> unique visitors!
+        </p>
     </div>
+
     <div class="content" id="cat_gallery">
         <div class="paragraph">
             <p> This is my cat Belle. Her droopy ear is from an old infection, she's fine now though.</p>
@@ -39,6 +43,7 @@
             <img class="cat" src="Assets/Belle/belle_12.png" alt="Belle shaking vigorously">
             <img class="cat" src="Assets/Belle/belle_05.png" alt="Belle standing in front of a window">
             <img class="cat" src="Assets/Belle/belle_04.png" alt="Belle sniffing YOU">
+            <img class="cat" src="Assets/Belle/belle_21.png" alt="Belle standing atop some lounge cushions">
             <img class="cat" src="Assets/Belle/belle_14.png" alt="Belle peeking out of a box">
             <img class="cat" src="Assets/Belle/belle_07.png" alt="Belle being cute and fluffy">
             <img class="cat" src="Assets/Belle/belle_19.png" alt="Belle being interupted during a butt-licking">
@@ -48,11 +53,30 @@
             <img class="cat" src="Assets/Belle/belle_11.png" alt="Belle with a groggy expression (she is sleepy)">
             <img class="cat" src="Assets/Belle/belle_01.png" alt="Belle laying on a rug">
             <img class="cat" src="Assets/Belle/belle_13.png" alt="Belle peeking into a shopping bag (it contains cat food)">
+            <img class="cat" src="Assets/Belle/belle_23.png" alt="Belle staring vacantly into the distance">
             <img class="cat" src="Assets/Belle/belle_20.png" alt="Belle yawning">
             <img class="cat" src="Assets/Belle/belle_15.png" alt="Belle sleeping snuggly">
             <img class="cat" src="Assets/Belle/belle_06.png" alt="Belle sitting around looking pretentious">
             <img class="cat" src="Assets/Belle/belle_17.png" alt="Belle posing elegantly">
+            <img class="cat" src="Assets/Belle/belle_22.png" alt="Belle peeking between some wooden guard rails">
         </div>
     </div>
+    <script>
+        // Visit count, https://dannarchy.com/tut/tut_002
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() 
+        {
+            if (this.readyState == 4 && this.status == 200) 
+            {
+                var site_data = JSON.parse(this.responseText);
+                document.getElementById("viewcount").innerHTML = site_data.info.views;
+
+                var date = site_data.info.last_updated;
+                document.getElementById("updatedate").innerHTML = date.substring(4,16);
+            }
+        };
+        xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=buggus", true);
+        xhttp.send();
+    </script>
   </body>
 </html>

@@ -30,7 +30,11 @@
         <div class="link_button">
             <a href="links.html">Links</a>
         </div>
+        <p>
+            Last updated <span id="updatedate"></span>, with <span id="viewcount"></span> unique visitors!
+        </p>
     </div>
+    
     <div class="content">
         <div class="paragraph">
             <p>
@@ -49,6 +53,23 @@
             
         </ol>
     </div>
+    <script>
+        // Visit count, https://dannarchy.com/tut/tut_002
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() 
+        {
+            if (this.readyState == 4 && this.status == 200) 
+            {
+                var site_data = JSON.parse(this.responseText);
+                document.getElementById("viewcount").innerHTML = site_data.info.views;
+
+                var date = site_data.info.last_updated;
+                document.getElementById("updatedate").innerHTML = date.substring(4,16);
+            }
+        };
+        xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=buggus", true);
+        xhttp.send();
+    </script>
 </body>
   
 <script>
