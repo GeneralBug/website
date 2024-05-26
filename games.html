@@ -115,9 +115,7 @@
             {
                 var site_data = JSON.parse(this.responseText);
                 document.getElementById("viewcount").innerHTML = site_data.info.views;
-
-                var date = site_data.info.last_updated;
-                document.getElementById("updatedate").innerHTML = date.substring(4,16);
+                document.getElementById("updatedate").innerHTML = new Date(site_data.info.last_updated).toLocaleDateString();
             }
         };
         xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=buggus", true);
