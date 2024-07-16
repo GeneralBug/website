@@ -37,6 +37,12 @@ div
   padding: 12px;
 }
 
+#mobile_warning
+{
+  display: none;
+  filter: drop-shadow(8px 8px 4px black);
+}
+
 .nav
 {
   background-color: var(--colour_front);
@@ -61,6 +67,11 @@ div
 #breadbug
 {
   width: 90%;
+}
+
+#pikmin_gif
+{
+  width: 25%;
 }
 
 .breadbug2, #title
@@ -273,7 +284,7 @@ h3
     height: auto;
   }
   
-  .nav, .content, #cat_gallery
+  .nav, .content, #cat_gallery, #mobile_warning
   {
     display: block;
     padding: 0px;
