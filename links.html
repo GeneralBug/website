@@ -52,11 +52,22 @@
         <br><br>
         <a href="https://benclark03.myportfolio.com/">Ben's Portfolio</a> - Ben animates stuff
       </div>
-              <div class="header">
-          <h1>OTHER STUFF</h1>
+      <div class="header">
+          <h1>WEBRING</h1>
+      </div>
+      <div class="paragraph">
+        Webring!
+        <div id='PikRing'>
+          <link rel="stylesheet" href="https://nickolox.neocities.org/pikring/css/pikring.css">
+          <script type="text/javascript" src="https://nickolox.neocities.org/pikring/pikring-variables.js"></script>
+          <script type="text/javascript" src="https://nickolox.neocities.org/pikring/pikring-widget.js"></script>
+        </div>
+      </div>
+      <div class="header">
+        <h1>OTHER STUFF</h1>
       </div>
       <div class="paragraph left_justified">
-          A big list of stuff I thought was cool, some of which might be useful to you!<br><br>
+          A big list of stuff I thought was cool, some of which you might find cool too!<br><br>
 
 
           <a href="https://pf2m.com/tools/mii/">Mii Renderer</a> - Lets you export high quality renders of Miis
@@ -110,4 +121,17 @@
       <!-- steam and modrinth if i put enough stuff to justify adding links
     <a href="https://steamcommunity.com/profiles/76561198163788245/myworkshopfiles"><img class="link_icon" src="Assets/Logos/logo_steam.png" alt="Steam Workshop"></a>
      -->
+  <script>
+    //script to randomise the webring image
+    var pictures = 
+    [
+      'https://buggus.neocities.org/Assets/Gifs/Blue_Pikmin_Smooth.gif', 
+      'https://buggus.neocities.org/Assets/Gifs/Red_Pikmin_Smooth.gif',
+      'https://buggus.neocities.org/Assets/Gifs/Yellow_Pikmin_Smooth.gif'
+    ];
+    var element = document.getElementsByClassName("PikRingImage");
+    element[0].src = pictures[Math.floor(Math.random() * pictures.length)];
+    //removes image set by css, otherwise src is overridden
+    element[0].style.content = "none";
+  </script> 
 </html>
