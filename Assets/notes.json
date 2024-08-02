@@ -582,5 +582,37 @@
 		"date"		: "July 2024",
 		"order"		: "072",	
 		"notes"		: "What's there is good but I feel like it needs more of something. More stuff to spend money on mostly, like more decorations, maybe other stuff like tank backgrounds or something. Maybe a way to influence the odds on fish packs? I'm at the point where I have essentually infinite money and all that's left to do is roll for all the gold and rainbow fish which I'm not particularly inclined to do."
+	},
+	{
+		"title" 	: "Kid Tripp",
+		"platform"	: "3DS",
+		"feel"		: "Negative",
+		"date"		: "July 2024",
+		"order"		: "073",	
+		"notes"		: "I didn't realise this was an autorunner, which is unfortunate because I hate autorunners. Looks pretty though."
+	},
+	{
+		"title" 	: "Thomas was Alone",
+		"platform"	: "Switch",
+		"feel"		: "Positive",
+		"date"		: "July 2024",
+		"order"		: "074",	
+		"notes"		: "The main interesting thing I found was how much characterisation they managed to give a bunch of rectangles using narration alone. Otherwise a nice little puzzle platformer."
+	},
+	{
+		"title" 	: "Paratopic",
+		"platform"	: "Switch",
+		"feel"		: "Positive",
+		"date"		: "July 2024",
+		"order"		: "075",	
+		"notes"		: "It sure is something. The metaphors and meanings and stuff are somewhat lost on me, but I appreciate what it's going for, and if nothing else the presentation is superb. I feel like I should add more but I'm not quite sure what."
+	},
+	{
+		"title" 	: "Metal Gear Solid",
+		"platform"	: "Switch",
+		"feel"		: "Positive",
+		"date"		: "August 2024",
+		"order"		: "076",	
+		"notes"		: "It was surprising to me just how similar it is to Metal Gear 2. It's usually a thing that when a series moves to a 3D system for the first time it ends up quite different as the added design possibilities lead them to make a bunch of changes taking advantage of those, for better or worse, but Metal Gear Solid is literally just Metal Gear 2 with polygons (and some first person stuff). Which is good; I quite liked Metal Gear 2 and liked this one even more. Fewer weird little bullshit parts is quite nice (though not completely absent), though getting spotted felt a lot more fatal in this one.<br><br>The attention to detail is wonderful, in every regard. Especially the graphics though. Holy scabolly, does this game look nice. The stock footage used in some of the cutscenes look a bit out of place though, and it doesn't help that most of them are common enough that I immediately recognised them. <br><br>Also, on the subject of similarities, I found it interesting how many sequences and concepts were reused from Metal Gear 2, like the \"four dudes try to kill you in an elevator\" and \"the final section is behind a key that you need to change the temperature of\", and even \"fist fight the pilot after blowing up the big mech\", especially considering plot stuff."
 	}
 ]
