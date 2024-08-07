@@ -47,7 +47,7 @@ div
 {
   background-color: var(--colour_front);
   position: fixed;
-  width: 16%;
+  width: 8%;
   height: 100%;  
   filter: drop-shadow(8px 8px 4px black);
   padding-bottom: 0px;
@@ -84,7 +84,7 @@ div
   width: 75%;
 }
 
-.paragraph, .paragraph_row
+.paragraph, .paragraph_row, .nav_button_list
 {
   background-color: var(--colour_front);
   margin-bottom: 12px;
@@ -100,6 +100,11 @@ div
   display: block;
 }
 
+.nav_button_list
+{
+  padding: 8px;
+}
+
 a
 {
   color: var(--colour_accent);
@@ -108,12 +113,17 @@ a
 
 .link_button, .link_button2
 {
-  font-size: 2em;
+  font-size: 1em;
   font-family: "Comic Sans MS", sans-serif;
   padding: 8px;
   background-color: var(--colour_para);
   margin: 8px;
+
   border-radius: 16px;
+  color: var(--colour_accent);
+  border-style: none;
+  width: 80%;
+  display: flex;
 }
 
 .link_button2
@@ -121,6 +131,45 @@ a
   font-size: 1.5em;
   padding: 16px;
   width: 40%;
+}
+
+.link_icon
+{  
+  width: 64px;
+  padding: 8px;
+  /*Keep pressing the button until it gets it perfect, invert the inversion for white image: https://codepen.io/sosuke/pen/Pjoqqp*/
+  filter: invert(30%) sepia(33%) saturate(495%) hue-rotate(337deg) brightness(103%) contrast(96%);
+}
+
+.link_icon_gif
+{
+  height:  1.5em;
+  padding: 0px;
+  margin: 0px;
+  /*Keep pressing the button until it gets it perfect, invert the inversion for white image: https://codepen.io/sosuke/pen/Pjoqqp*/
+  filter: invert(30%) sepia(33%) saturate(495%) hue-rotate(337deg) brightness(103%) contrast(96%);
+  animation-play-state: paused;
+}
+
+#icon_home:hover .link_icon_gif
+{
+  content: url(Assets/Gifs/navigation/icon_home.gif);
+}
+#icon_games:hover .link_icon_gif
+{
+  content: url(Assets/Gifs/navigation/icon_home.gif);
+}
+#icon_cat:hover .link_icon_gif
+{
+  content: url(Assets/Gifs/navigation/icon_home.gif);
+}
+#icon_notes:hover .link_icon_gif
+{
+  content: url(Assets/Gifs/navigation/icon_home.gif);
+}
+#icon_links:hover .link_icon_gif
+{
+  content: url(Assets/Gifs/navigation/icon_home.gif);
 }
 
 h1, h4, h5, h6
@@ -227,14 +276,6 @@ h3
 
 .active:after {
   content: '∧'; /* Unicode character for "minus" sign (-) */
-}
-
-.link_icon
-{  
-  width: 64px;
-  padding: 8px;
-  /*Keep pressing the button until it gets it perfect, invert the inversion for white image: https://codepen.io/sosuke/pen/Pjoqqp*/
-  filter: invert(30%) sepia(33%) saturate(495%) hue-rotate(337deg) brightness(103%) contrast(96%);
 }
 
 #sort_button
