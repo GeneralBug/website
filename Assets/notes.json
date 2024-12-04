@@ -628,7 +628,15 @@
 		"platform"	: "PC",
 		"feel"		: "Positive",
 		"date"		: "December 2024",
-		"order"		: "78",	
+		"order"		: "078",	
 		"notes"		: "A great little platformer, does everything very well. The only thing might be that (without spoiling it) the situation you're in becomes quite apparent pretty quickly, but the game still treats each instance of it being mentioned as a big reveal, if that makes sense. Some of the \"journal entries\" could be a little less on the nose I think."
+	},
+	{
+		"title" 	: "A Short Hike",
+		"platform"	: "PC",
+		"feel"		: "Positive",
+		"date"		: "December 2024",
+		"order"		: "079",	
+		"notes"		: "Beautiful in every sense. Just such a lovely time, especially the boat and flying (once you get the hang of it). The fishing is very nice, I'm very much in the camp of \"everything needs a fishing minigame\" and this only strengthened my stance. I can't really think of anything intelligible to say, it's all just gushing. It's very deserved though, this is unbelievably good."
 	}
 ]
