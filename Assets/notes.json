@@ -616,19 +616,11 @@
 		"notes"		: "It was surprising to me just how similar it is to Metal Gear 2. It's usually a thing that when a series moves to a 3D system for the first time it ends up quite different as the added design possibilities lead them to make a bunch of changes taking advantage of those, for better or worse, but Metal Gear Solid is literally just Metal Gear 2 with polygons (and some first person stuff). Which is good; I quite liked Metal Gear 2 and liked this one even more. Fewer weird little bullshit parts is quite nice (though not completely absent), though getting spotted felt a lot more fatal in this one.<br><br>The attention to detail is wonderful, in every regard. Especially the graphics though. Holy scabolly, does this game look nice. The stock footage used in some of the cutscenes look a bit out of place though, and it doesn't help that most of them are common enough that I immediately recognised them. <br><br>Also, on the subject of similarities, I found it interesting how many sequences and concepts were reused from Metal Gear 2, like the \"four dudes try to kill you in an elevator\" and \"the final section is behind a key that you need to change the temperature of\", and even \"fist fight the pilot after blowing up the big mech\", especially considering plot stuff."
 	},
 	{
-		"title" 	: "THE ENIGMA MACHINE",
-		"platform"	: "PC",
-		"feel"		: "Positive",
-		"date"		: "August 2024",
-		"order"		: "077",	
-		"notes"		: "TODO"
-	},
-	{
 		"title" 	: "System Purge",
 		"platform"	: "PC",
 		"feel"		: "Positive",
 		"date"		: "December 2024",
-		"order"		: "078",	
+		"order"		: "077",	
 		"notes"		: "A great little platformer, does everything very well. The only thing might be that (without spoiling it) the situation you're in becomes quite apparent pretty quickly, but the game still treats each instance of it being mentioned as a big reveal, if that makes sense. Some of the \"journal entries\" could be a little less on the nose I think."
 	},
 	{
@@ -636,7 +628,7 @@
 		"platform"	: "PC",
 		"feel"		: "Positive",
 		"date"		: "December 2024",
-		"order"		: "079",	
+		"order"		: "078",	
 		"notes"		: "Beautiful in every sense. Just such a lovely time, especially the boat and flying (once you get the hang of it). The fishing is very nice, I'm very much in the camp of \"everything needs a fishing minigame\" and this only strengthened my stance. I can't really think of anything intelligible to say, it's all just gushing. It's very deserved though, this is unbelievably good."
 	}
 ]
