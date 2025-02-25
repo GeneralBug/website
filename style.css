@@ -2,7 +2,7 @@
 :root
 {
   --colour_back: var(--ctp-mocha-mantle);
-  --colour_front: var(--ctp-mocha-surface1);
+  --colour_front: none;
   --colour_accent: var(--ctp-mocha-peach);
   --colour_text: var(--ctp-mocha-text);
   --colour_para: var(--ctp-mocha-surface2);
@@ -19,6 +19,8 @@ body
   background-image: url("Assets/background.png");
   background-repeat: repeat;
   background-size: 4em;
+  background-attachment: fixed;
+  filter: drop-shadow(8px 8px 4px var(--colour_back));
 }
 
 ol
@@ -40,33 +42,42 @@ div
 #mobile_warning
 {
   display: none;
-  filter: drop-shadow(8px 8px 4px black);
+}
+
+
+
+.link_button_list
+{  
+  margin: auto;
+  align-items: center;
+  width: auto;
+  display: flex;
+}
+
+
+.content, .nav
+{
+  filter: drop-shadow(-8px 8px 4px black);
+  margin:auto;
+  width: 50%;
+  line-height: 1.1;
+
+  padding-bottom: 0px;
+  border-radius: 16px;
 }
 
 .nav
 {
   background-color: var(--colour_front);
-  position: fixed;
-  width: 8%;
-  height: 100%;  
-  filter: drop-shadow(8px 8px 4px black);
-  padding-bottom: 0px;
-  top: 0;
-}
-
-.content
-{
-  margin:auto;
-  width: 40%;
-  line-height: 1.1;
-  filter: drop-shadow(8px 8px 4px black);
-  padding-bottom: 0px;
-  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
 }
 
 #breadbug
 {
-  width: 90%;
+  width: 20%;
 }
 
 #pikmin_gif
@@ -74,17 +85,7 @@ div
   width: 25%;
 }
 
-.breadbug2, #title
-{
-  height: 64px;
-}
-
-#breadbug3
-{
-  width: 75%;
-}
-
-.paragraph, .paragraph_row, .nav_button_list
+.paragraph, .paragraph_row
 {
   background-color: var(--colour_front);
   margin-bottom: 12px;
@@ -100,37 +101,32 @@ div
   display: block;
 }
 
-.nav_button_list
-{
-  padding: 8px;
-}
-
 a
 {
   color: var(--colour_accent);
   text-decoration-thickness: 1px;
 }
 
-.link_button, .link_button2
+.link_button
 {
   font-size: 1em;
   font-family: "Comic Sans MS", sans-serif;
-  padding: 8px;
+  padding: 12px;
   background-color: var(--colour_para);
-  margin: 8px;
+  margin: 2px;
 
   border-radius: 16px;
   color: var(--colour_accent);
   border-style: none;
-  width: 80%;
+  width: 50%;
   display: flex;
+  align-items: center;
 }
 
-.link_button2
+.link_button_text
 {
-  font-size: 1.5em;
-  padding: 16px;
-  width: 40%;
+  margin: 0;
+  display: flex;
 }
 
 .link_icon
@@ -178,18 +174,14 @@ h1, h4, h5, h6
   font-family: "Comic Sans MS", sans-serif;
 }
 
-.header
-{
-  display:flex;
-}
-
-h1
+h1, h4
 {
   color: var(--colour_accent);
-  font-size: 2em;
-  height: 64px;
-  width: 60%;
-  margin: auto;
+  font-size: 3em;
+  height: auto;
+  width: auto;
+  margin: auto;  
+  filter: drop-shadow(4px 4px 2px black);
 }
 
 h2, h3
@@ -203,7 +195,7 @@ h2
   font-size: 1em;
 }
 
-h3
+h3, h4
 {
   font-size: 1.2em;
 }
@@ -263,7 +255,7 @@ h3
   padding: 16px;
   display: none;
   overflow: hidden;
-  background-color: var(--colour_para);
+  background-color: var(--colour_front);
   text-align: left;
   margin-bottom: 12px;
   border-radius: 16px;  
@@ -298,69 +290,46 @@ h3
   color: var(--colour_accent);
 }
 
-@media only screen and (max-width: 1710px) 
+@media only screen and (max-width: 1200px) 
 {
-  .link_button, .link_button2
-  {
-    width: auto;
-    font-size: 1em;
-    min-width: 40%;
-  }    
-  h1
-  {
-    width: auto;
-    font-size: 2em;
-  }
 
-  .content, #cat_gallery
+  .link_button_list
   {
-    width: 50%;
+    font-size: 0.8em;
   }
-  .nav
+  .content, .nav
   {
-    width: 20%;
+    width: 90%;
   }
 }
 
-@media only screen and (max-width: 810px) 
+@media only screen and (max-width: 800px) 
 {
-  #title
-  {
-    width: 70%;
-    height: auto;
-  }
-  
-  .nav, .content, #cat_gallery, #mobile_warning
-  {
-    display: block;
-    padding: 0px;
-    position: relative;
-    margin: auto;
-    width: 90%;
-    padding-bottom: 12px;
-    margin-bottom: 12px;
-    border-radius: 16px;      
-  }
-
-  .breadbug2
-  {
-    display: none;
-  }
-  
-  .cat
-  {
-    width: 80%;
-  }
-  
-  h1
-  {
-    width: auto;
-    height: auto;
-  }
-  
-  body  
+  #mobile_warning
   {
     display: flex;
-    flex-direction: column-reverse;
+  }
+
+  h1 
+  {
+    font-size: 2em;
+  }
+
+  .link_button_text
+  {
+    position:absolute;
+    width: 0;
+    padding: 0;
+    margin: 0;    
+    display: none;
+  }
+  .link_icon_gif
+  {
+    padding: 0;
+  }
+
+  .content
+  {
+    font-size: .6em;
   }
 }

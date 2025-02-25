@@ -12,29 +12,37 @@
   </head>  
   <body>
     <div class="nav">
-        <img id="breadbug"
+        <div class="link_button_list">
+            <img id="breadbug"
                 src="Assets/Gifs/Breadbug_Textured.gif" 
                 alt="Digital render of a breadbug spinning">
-        <a class= "link_button" id="icon_home" href="index.html">
-            <img class="link_icon_gif"  src="Assets/Gifs/navigation/icon_home.png" alt="Home">
-            Home     
-        </a>
-        <a class= "link_button" id="icon_games" href="games.html">
-            <img class="link_icon_gif" src="Assets/Gifs/navigation/icon_games.png" alt="Games">
-              Games     
-        </a>
-        <a class= "link_button" id="icon_cat" href="cat.html">
-            <img class="link_icon_gif" src="Assets/Gifs/navigation/icon_cat.png" alt="Cat">
-            Cat     
-        </a>
-        <a class= "link_button" id="icon_notes" href="notes.html">
-            <img class="link_icon_gif" src="Assets/Gifs/navigation/icon_notes.png" alt="Notes">
-            Notes     
-        </a>
-        <a class= "link_button" id="icon_links" href="links.html">
-            <img class="link_icon_gif" src="Assets/Gifs/navigation/icon_links.png" alt="Links">
-            Links     
-        </a>
+            <h1>BUG'S STUFF</h1>
+            <img id="breadbug"
+                src="Assets/Gifs/Breadbug_Textured.gif" 
+                alt="Digital render of a breadbug spinning">
+        </div>
+        <div class="link_button_list">
+            <a class= "link_button" id="icon_home" href="index.html">
+                <img class="link_icon_gif"  src="Assets/Gifs/navigation/icon_home.png" alt="Home">
+                <p class="link_button_text">Home</p>     
+            </a>
+            <a class= "link_button" id="icon_games" href="games.html">
+                <img class="link_icon_gif" src="Assets/Gifs/navigation/icon_games.png" alt="Games">
+                <p class="link_button_text">Games</p>   
+            </a>
+            <a class= "link_button" id="icon_cat" href="cat.html">
+                <img class="link_icon_gif" src="Assets/Gifs/navigation/icon_cat.png" alt="Cat">
+                <p class="link_button_text">Cat</p>   
+            </a>
+            <a class= "link_button" id="icon_notes" href="notes.html">
+                <img class="link_icon_gif" src="Assets/Gifs/navigation/icon_notes.png" alt="Notes">
+                <p class="link_button_text">Notes</p> 
+            </a>
+            <a class= "link_button" id="icon_links" href="links.html">
+                <img class="link_icon_gif" src="Assets/Gifs/navigation/icon_links.png" alt="Links">
+                <p class="link_button_text">Links</p> 
+            </a>
+        </div>
     </div>
     
     <div class="content">
@@ -43,10 +51,10 @@
                 As an exercise intended to improve my own design abilities by analysing other games, I started writing these little "review" things when I play a game (though I don't want them to be reviews, some get more "review-y" than others). They aren't really meant for others, so some of them are very rambly and possibly incomprehensible, so read them at your own risk.
                 <br>
                 <br>
-                Also they're listed with the system I played it on and my general feelings about it (positive/negative). I only started dating them in April 2023, but the earliest are from about 2020, if I remember correctly.              
+                Also each is listed with the system I played it on and my general feelings about it (positive/negative). I only started dating them in April 2023, but the earliest are from about 2020, if I remember correctly.              
                 <br>
                 <br>
-                ALSO this page uses JavaScript to load everything in from a json file, in case it's blank.
+                Also also this page uses JavaScript to load everything in from a json file, in case it's blank.
                 <br><br>
                 <button id="sort_button" onclick="sortList()"></button>
             </p>
@@ -55,7 +63,6 @@
             
         </ol>
     </div>
-    <div id="mobile_warning"><h2>This site works best on desktop!</h2></div>
 </body>
   
 <script>
@@ -222,6 +229,4 @@
         sortButton.removeAttribute("disabled");
     }
 </script>
-  
-
 </html>

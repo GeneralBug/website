@@ -638,5 +638,21 @@
 		"date"		: "December 2024",
 		"order"		: "079",	
 		"notes"		: "This is what we in the business call a \"banger\". It's really good in basically every way, so assume anything not mentioned is good. Speaking of mentioning:<br><br>The main elephant in the room is the procedurally generated everything. I understand the motivation behind it; this is definitely the sort of game you'll should replay for the full experience, and that would be lessened if you were already completely familiar with the map and dungeons, but I can't help but feel the missed opportunity of having really good dungeon designs. This is especially apparent given the final dungeon isn't randomised, and it's really good! At the same times, there are some parts that need <em>more</em> randomisation, like the tree-secret-thingies, which only have maybe six fixed layouts. However, overall I think the procedural generation is good, and shouldn't deter someone from at least beating the game through once.<br><br>The main other issue I had was more technical. When I first booted the game, it really didn't want to go into full screen, but I managed to get it to somehow I forgot what I did), and the screen tearing is pretty nasty on screen transitions and stuff. I imagine these are more issues with my particular setup though.<br><br>While we're on negatives, some other bits:<ul><li>Every weapon beside the katana forces you to stand still when swinging it, making them all basically useless. They just feel so bad to use in comparison, though maybe that's just a personal thing.<li>It has a little too much meta \"teehee-I'm-a-Zelda-clone-isn't-it-weird-to-run-into-someone's-house-and-smash-their-pots\" type humour for my taste, though similar to the procedural generation, I think it's more that it just makes a bad first impression.</ul><br>Some good stuff now! Including two entire selectable art styles is extremely cool and impressive. Also having a bunch of extra game modes is always nice, though I haven't played much of them as of writing. As well as that, just a bunch of other little things that are really great, like how using your bow without any arrows swings it instead, and having all the different potions and stuff obscured until you use them. Also Paige. "
+	},
+	{
+		"title" 	: "My Husband is a WITCH",
+		"platform"	: "Game Boy",
+		"feel"		: "Positive",
+		"date"		: "February 2025",
+		"order"		: "080",	
+		"notes"		: "Very cute little puzzle game! Though I hate \"normal\" mode; having to replay *puzzles* for failing at a later point is weird and annoying, since they aren't generally very hard to execute once you know the solution. Also the slight inconsistency of moment between the two witches feels a bit off sometimes, since rather than having both their movements maps to the button, it seems to be that you control one and the other is just copying you. That sounds like the same thing but it feels different."
+	},
+	{
+		"title" 	: "Age of Mythology: Retold",
+		"platform"	: "PC",
+		"feel"		: "Positive",
+		"date"		: "February 2025",
+		"order"		: "081",	
+		"notes"		: "It sure is Age of Mythology! Having not played the original in over a decade (and having not even played all that much of it at the time either, relatively speaking), it feels like just a visual overhaul, with the only mechanical differences I noticed being the ability to use god powers multiple times, and the villager thing. The villager thing that lets you auto-assign villagers to resource collection based on a ratio of what you want them to prioritise. It's nice sometimes, as it cuts out a bit of micromanagement, but it's has at least three issues:<ul><li>Any map where you have multiple disconnected areas of the map to manage (of which there are several in the campaigns) completely break it, as villagers from either side will be arbitrarily assigned to resources on the opposite side, and just end up stuck in a corner somewhere.</li><li>Villagers love going for resources beside enemy towers and things, so they get shot! Which is bad.</li><li>Whenever you change the ratios, it likes to shuffle every villager to a new task, so all the farmers will become miners and the lumberjacks are now all farmers and so on. This feels very odd.</li></ul> Also there's the auto-production-queue stuff, that's quite nice."
 	}
 ]
