@@ -654,5 +654,29 @@
 		"date"		: "February 2025",
 		"order"		: "081",	
 		"notes"		: "It sure is Age of Mythology! Having not played the original in over a decade (and having not even played all that much of it at the time either, relatively speaking), it feels like just a visual overhaul, with the only mechanical differences I noticed being the ability to use god powers multiple times, and the villager thing. The villager thing that lets you auto-assign villagers to resource collection based on a ratio of what you want them to prioritise. It's nice sometimes, as it cuts out a bit of micromanagement, but it's has at least three issues:<ul><li>Any map where you have multiple disconnected areas of the map to manage (of which there are several in the campaigns) completely break it, as villagers from either side will be arbitrarily assigned to resources on the opposite side, and just end up stuck in a corner somewhere.</li><li>Villagers love going for resources beside enemy towers and things, so they get shot! Which is bad.</li><li>Whenever you change the ratios, it likes to shuffle every villager to a new task, so all the farmers will become miners and the lumberjacks are now all farmers and so on. This feels very odd.</li></ul> Also there's the auto-production-queue stuff, that's quite nice."
+	},
+	{
+		"title" 	: "POTTERGAME",
+		"platform"	: "PC",
+		"feel"		: "Neutral",
+		"date"		: "February 2025",
+		"order"		: "082",	
+		"notes"		: "It sure is a Video Game. I don't have all that much to say design-wise, I mostly just feel the need to highlight its existance. Because it sure is a thing that exists. For the uninitiated, it's a parody of shitty Harry Potter licensed games, and does some stuff with that concept. It's reasonably short so you should try it out. Also I got 1349 beans."
+	},
+	{
+		"title" 	: "King Pins",
+		"platform"	: "PC",
+		"feel"		: "Positive",
+		"date"		: "March 2025",
+		"order"		: "083",	
+		"notes"		: "A good little game! I only played the campaign so I can't speak to how balanced multiplayer is, but probably not super well if the singleplayer is an indication. As an example, I struggled a lot on the final level, slowly building up my base only to get inevitably overwhelmed, but then I just rushed their king with archers from basically the beginning and won very quickly. Also the controls can be a bit finicky, with you being unable to select tiles occupied even slightly by a unit, and accidentally moving units is very easy (which is especially bad in a game were you have a unit you very much *don't* want running into the middle of the enemy base). But very good and fun overall I think!"
+	},
+	{
+		"title" 	: "Awaria",
+		"platform"	: "PC",
+		"feel"		: "Positive",
+		"date"		: "March 2025",
+		"order"		: "084",	
+		"notes"		: "Very cute and fun and hard. It's hard to go back to earlier levels without the dodge after using it, as it feels very natural and good (though it feels like there's a few too many frames of delay at the beginning). "
 	}
 ]
