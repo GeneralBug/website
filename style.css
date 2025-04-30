@@ -213,6 +213,7 @@ h3, h4
 .screenshot
 {
   height: 100%;
+  max-width: 80%;
 }
 
 .cat
