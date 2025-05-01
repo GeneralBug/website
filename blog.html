@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Bug's Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://buggus.neocities.org/Assets/emma_breadbug_picture.png"/>
+    <meta property="og:description" content="Bug's cool website of cool stuff"/>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="Assets/breadbug.ico">
+    <script src="jquery-3.7.1.min.js"></script>
+  </head>  
+  <body>
+    <div class="nav">
+        <div class="link_button_list">
+            <img id="breadbug"
+                src="Assets/Gifs/Breadbug_Textured.gif" 
+                alt="Digital render of a breadbug spinning">
+            <h1>BUG'S STUFF</h1>
+            <img id="breadbug"
+                src="Assets/Gifs/Breadbug_Textured.gif" 
+                alt="Digital render of a breadbug spinning">
+        </div>
+        <div class="link_button_list">
+            <a class= "link_button" id="icon_home" href="index.html">
+                <img class="link_icon_gif"  src="Assets/Gifs/navigation/icon_home.png" alt="Home">
+                <p class="link_button_text">Home</p>     
+            </a>
+            <a class= "link_button" id="icon_games" href="games.html">
+                <img class="link_icon_gif" src="Assets/Gifs/navigation/icon_games.png" alt="Games">
+                <p class="link_button_text">Games</p>   
+            </a>
+            <a class= "link_button" id="icon_cat" href="cat.html">
+                <img class="link_icon_gif" src="Assets/Gifs/navigation/icon_cat.png" alt="Cat">
+                <p class="link_button_text">Cat</p>   
+            </a>
+            <a class= "link_button" id="icon_notes" href="notes.html">
+                <img class="link_icon_gif" src="Assets/Gifs/navigation/icon_notes.png" alt="Notes">
+                <p class="link_button_text">Notes</p> 
+            </a>
+            <a class= "link_button" id="icon_links" href="links.html">
+                <img class="link_icon_gif" src="Assets/Gifs/navigation/icon_links.png" alt="Links">
+                <p class="link_button_text">Links</p> 
+            </a>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="paragraph">
+            <p>
+                As an exercise intended to improve my own design abilities by analysing other games, I started writing these little "review" things when I play a game (though I don't want them to be reviews, some get more "review-y" than others). They aren't really meant for others, so some of them are very rambly and possibly incomprehensible, so read them at your own risk.
+                <br>
+                <br>
+                Also each is listed with the system I played it on and my general feelings about it (positive/negative). I only started dating them in April 2023, but the earliest are from about 2020, if I remember correctly.              
+                <br>
+                <br>
+                Also also this page uses JavaScript to load everything in from a json file, in case it's blank.
+                <br><br>
+                <button id="sort_button" onclick="sortList()"></button>
+            </p>
+        </div>
+        <ol id = "notes_list">
+            
+        </ol>
+    </div>
+    <img class="invisible" src="Assets/Gifs/navigation/icon_home.gif">
+    <img class="invisible" src="Assets/Gifs/navigation/icon_games.gif">
+    <img class="invisible" src="Assets/Gifs/navigation/icon_cat.gif">
+    <img class="invisible" src="Assets/Gifs/navigation/icon_notes.gif">
+    <img class="invisible" src="Assets/Gifs/navigation/icon_links.gif">
+</body>
+  
+<script>
+    var sortType = "platform";
+    var sortButton = document.getElementById("sort_button");
+    var notesList = document.getElementById("notes_list");
+
+    populate_list();
+
+    function populate_list()
+    {
+        //function for populating the list from json, based on https://stackoverflow.com/questions/28256271/populate-ul-in-html-with-json-data
+        $.getJSON('/Assets/blog.json', function (data) 
+        {
+            for( var i = 0; i < data.length; i++ )
+            { 
+                var o = data[i];
+                //console.log(o);
+                var li = document.createElement("li");
+                li.classList.add("sortable");
+                li.setAttribute("id", o.order);
+                //button
+                var header = document.createElement("button");
+                header.classList.add("collapsible");
+                header.innerHTML = o.title + " (" + o.date + ")";
+                //div
+                var body = document.createElement("div");
+                body.classList.add("collapsible-content");
+                //h3
+                var h3 = document.createElement("h3");
+                h3.innerHTML = o.date;
+                body.appendChild(h3);
+                //paragraph
+                var p = document.createElement("p");
+                p.innerHTML = o.notes;
+                body.appendChild(p);
+                
+                //adds functionality to the buttons, based on https://www.w3schools.com/howto/howto_js_collapsible.asp
+                header.addEventListener("click", function() 
+                {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") 
+                    {
+                        content.style.display = "none";
+                    } 
+                    else 
+                    {
+                        content.style.display = "block";
+                    }
+                });
+                
+                li.appendChild(header);
+                li.appendChild(body);
+                notesList.appendChild(li);
+            }                   
+            sortList();
+        });
+
+    }
+    
+    function sortList() 
+    {
+        //based on https://www.w3schools.com/howto/howto_js_sort_list.asp
+        sortButton.setAttribute("disabled", true);
+
+        console.log("running sort");
+        var i, switching, b, shouldSwitch;
+        switching = true;
+
+        switch(sortType)
+        {
+        case "newest":
+            sortType = "oldest";
+            break;
+        case "oldest":
+            sortType = "newest";
+            break;
+        default:
+            sortType = "newest";
+        }
+        sortButton.innerHTML = "Sorting by " + sortType;
+
+        while (switching) 
+        {
+            switching = false;
+            b = notesList.getElementsByClassName("sortable");
+            console.log(b.length);
+            switch(sortType)
+            //TODO: yucky, this can almost certainly be shrunk but i cant be fucked
+                {
+                case "newest":
+                    for (i = 0; i < (b.length - 1); i++) 
+                    {
+                        shouldSwitch = false;
+                        if (b[i].id < b[i + 1].id) 
+                        {
+                            /* If next item is alphabetically lower than current item,
+                            mark as a switch and break the loop: */
+                            shouldSwitch = true;
+                            break;
+                        }
+                    }
+                    if (shouldSwitch) 
+                    {
+                        /* If a switch has been marked, make the switch
+                        and mark the switch as done: */
+                        b[i].parentNode.insertBefore(b[i + 1], b[i]);
+                        switching = true;
+                    }
+                    break;
+                case "oldest":
+                    for (i = 0; i < (b.length - 1); i++) 
+                    {
+                        shouldSwitch = false;
+                        if (b[i].id > b[i + 1].id) 
+                        {
+                            /* If next item is alphabetically lower than current item,
+                            mark as a switch and break the loop: */
+                            shouldSwitch = true;
+                            break;
+                        }
+                    }
+                    if (shouldSwitch) 
+                    {
+                        /* If a switch has been marked, make the switch
+                        and mark the switch as done: */
+                        b[i].parentNode.insertBefore(b[i + 1], b[i]);
+                        switching = true;
+                    }
+                    break;
+                default:
+                    console.log("sortList got an invalid sortType, woopsie doodle!");
+                }
+
+        }
+        sortButton.removeAttribute("disabled");
+    }
+</script>
+</html>
