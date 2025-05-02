@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>Bug's Blog</title>
+  <link>https://buggus.neocities.org/blog</link>
+  <description>Bug's blog about whatever</description>
+  <item>
+    <title>The First One</title>
+    <link>https://buggus.neocities.org/blog</link>
+    <description>I wrote some stuff</description>
+  </item>
+</channel>
+</rss> 
