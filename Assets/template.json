@@ -1,11 +1,8 @@
-[
-,
-	{
-		"title" 	: "",
-		"platform"	: "",
-		"feel"		: "",
-		"date"		: "",
-		"order"		: "",	
-		"notes"		: ""
-	}
-]
+            
+			<li class="sortable" id="ORDER">
+                <button class="collapsible">TITLE (PC)</button>
+                <div class="collapsible-content">
+                    <h2>Positive</h2>
+                    <p>NOTES</p>
+                </div>
+            </li> 
