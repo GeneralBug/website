@@ -113,19 +113,19 @@ a
   font-family: "Comic Sans MS", "LDFComicSans", sans-serif;
   padding: 12px;
   background-color: var(--colour_para);
-  margin: 2px;
+  margin: 6px;
 
   border-radius: 16px;
   color: var(--colour_accent);
   border-style: none;
-  width: 50%;
+  width: 128px;
   display: flex;
   align-items: center;
 }
 
 .link_button_text
 {
-  margin: 0;
+  margin: 0%;
   display: flex;
 }
 
@@ -168,6 +168,14 @@ a
 {
   content: url(Assets/Gifs/navigation/icon_links.gif);
 }
+#icon_back:hover .link_icon_gif
+{
+  content: url(Assets/Gifs/navigation/icon_back.gif);
+}
+#icon_forward:hover .link_icon_gif
+{
+  content: url(Assets/Gifs/navigation/icon_forward.gif);
+}
 
 .invisible
 {
@@ -182,7 +190,7 @@ h1, h4, h5, h6
   font-family: "Comic Sans MS", "LDFComicSans", sans-serif;
 }
 
-h1, h4
+h1, h4, h5
 {
   color: var(--colour_accent);
   font-size: 3em;
@@ -192,7 +200,7 @@ h1, h4
   filter: drop-shadow(4px 4px 2px black);
 }
 
-h2, h3
+h2, h3, h5
 {
   padding: 0px;
   margin: 6px;
@@ -206,6 +214,19 @@ h2
 h3, h4
 {
   font-size: 1.2em;
+}
+
+h5
+{
+  font-size: 2em;
+
+}
+hr 
+{
+  border: solid var(--colour_para);
+  border-radius: 16px;
+  border-width: 4px 0 0 0;
+  margin: 1em;
 }
 
 .screenshot, .cat, .cat2, .notes_picture
@@ -235,7 +256,7 @@ h3, h4
 }
 
  /* Style the button that is used to open and close the collapsible content */
-.collapsible, .sorting, #sort_button {
+.collapsible, .sorting, #sort_button, .small_sort_button {
   background-color: var(--colour_para);
   color: var(--colour_text);
   font-family: "Comic Sans MS", "LDFComicSans", sans-serif;
@@ -253,7 +274,7 @@ h3, h4
 
 /*https://www.w3schools.com/howto/howto_js_collapsible.asp*/
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover, .sorting:hover, #sort_button:hover {
+.active, .collapsible:hover, .sorting:hover, #sort_button:hover, .small_sort_button:hover {
   background-color: var(--colour_accent);
   color: var(--colour_para);
 }
@@ -280,12 +301,23 @@ h3, h4
   content: '∧'; /* Unicode character for "minus" sign (-) */
 }
 
-#sort_button
+#sort_button, .small_sort_button
 {
-  width: 60%;
+  width: 30%;
   font-size: 18px;
   text-align: center;
   background-color: var(--colour_para);
+}
+
+.small_sort_button
+{
+  max-width: 48px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left :16px;
+  margin-right: 16px;
+  font-size: 20px;
+  padding: 2px;
 }
 
 .left_justified
@@ -322,6 +354,11 @@ h3, h4
   h1 
   {
     font-size: 2em;
+  }
+
+  .link_button
+  {
+    width: 50%;
   }
 
   .link_button_text

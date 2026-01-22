@@ -8,7 +8,6 @@
     <meta property="og:description" content="Bug's cool website of cool stuff"/>
     <link href="style.css" rel="stylesheet">
     <link rel="icon" href="Assets/breadbug.ico">
-    <script src="jquery-3.7.1.min.js"></script>
   </head>  
   <body>
     <div class="nav">
@@ -26,6 +25,10 @@
                 <img class="link_icon_gif"  src="Assets/Gifs/navigation/icon_home.png" alt="Home">
                 <p class="link_button_text">Home</p>     
             </a>
+            <a class= "link_button" id="icon_notes" href="blog.html">
+                <img class="link_icon_gif" src="Assets/Gifs/navigation/icon_notes.png" alt="Blog">
+                <p class="link_button_text">Blog</p> 
+            </a>
             <a class= "link_button" id="icon_games" href="games.html">
                 <img class="link_icon_gif" src="Assets/Gifs/navigation/icon_games.png" alt="Games">
                 <p class="link_button_text">Games</p>   
@@ -33,10 +36,6 @@
             <a class= "link_button" id="icon_cat" href="cat.html">
                 <img class="link_icon_gif" src="Assets/Gifs/navigation/icon_cat.png" alt="Cat">
                 <p class="link_button_text">Cat</p>   
-            </a>
-            <a class= "link_button" id="icon_notes" href="notes.html">
-                <img class="link_icon_gif" src="Assets/Gifs/navigation/icon_notes.png" alt="Notes">
-                <p class="link_button_text">Notes</p> 
             </a>
             <a class= "link_button" id="icon_links" href="links.html">
                 <img class="link_icon_gif" src="Assets/Gifs/navigation/icon_links.png" alt="Links">
@@ -48,161 +47,16 @@
     <div class="content">
         <div class="paragraph">
             <p>
-                My blog! I might write things here, maybe. There's no particular subject or theme, just whatever happens to tickle my fancy. You can read it if you like!
-                <br><br> 
-                Also this page uses JavaScript to load everything in from a json file, in case it's blank.
-                <br><br>
-                <a rel="me" href="rss/blog.xml"><img class="link_icon" src="Assets/Logos/logo_rss.png" alt="RSS"></a>
-                <br>
-                <button id="sort_button" onclick="sortList()"></button>
+                My blog! I might write things here, maybe. You can read them if you'd like. There's also my game notes, which you can read more about inside.
             </p>
         </div>
-        <ol id = "notes_list">
-            
-        </ol>
+        <div id="postlistdiv" class="paragraph left_justified"></div>
     </div>
     <img class="invisible" src="Assets/Gifs/navigation/icon_home.gif">
     <img class="invisible" src="Assets/Gifs/navigation/icon_games.gif">
     <img class="invisible" src="Assets/Gifs/navigation/icon_cat.gif">
     <img class="invisible" src="Assets/Gifs/navigation/icon_notes.gif">
     <img class="invisible" src="Assets/Gifs/navigation/icon_links.gif">
+    <script src="blog_script.js"></script>
 </body>
-  
-<script>
-    var sortType = "platform";
-    var sortButton = document.getElementById("sort_button");
-    var notesList = document.getElementById("notes_list");
-
-    populate_list();
-
-    function populate_list()
-    {
-        //function for populating the list from json, based on https://stackoverflow.com/questions/28256271/populate-ul-in-html-with-json-data
-        $.getJSON('/Assets/blog.json', function (data) 
-        {
-            for( var i = 0; i < data.length; i++ )
-            { 
-                var o = data[i];
-                //console.log(o);
-                var li = document.createElement("li");
-                li.classList.add("sortable");
-                li.setAttribute("id", o.order);
-                //button
-                var header = document.createElement("button");
-                header.classList.add("collapsible");
-                header.innerHTML = o.title + " (" + o.date + ")";
-                //div
-                var body = document.createElement("div");
-                body.classList.add("collapsible-content");
-                //h3
-                var h3 = document.createElement("h3");
-                h3.innerHTML = o.date;
-                body.appendChild(h3);
-                //paragraph
-                var p = document.createElement("p");
-                p.innerHTML = o.notes;
-                body.appendChild(p);
-                
-                //adds functionality to the buttons, based on https://www.w3schools.com/howto/howto_js_collapsible.asp
-                header.addEventListener("click", function() 
-                {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.display === "block") 
-                    {
-                        content.style.display = "none";
-                    } 
-                    else 
-                    {
-                        content.style.display = "block";
-                    }
-                });
-                
-                li.appendChild(header);
-                li.appendChild(body);
-                notesList.appendChild(li);
-            }                   
-            sortList();
-        });
-
-    }
-    
-    function sortList() 
-    {
-        //based on https://www.w3schools.com/howto/howto_js_sort_list.asp
-        sortButton.setAttribute("disabled", true);
-
-        console.log("running sort");
-        var i, switching, b, shouldSwitch;
-        switching = true;
-
-        switch(sortType)
-        {
-        case "newest":
-            sortType = "oldest";
-            break;
-        case "oldest":
-            sortType = "newest";
-            break;
-        default:
-            sortType = "newest";
-        }
-        sortButton.innerHTML = "Sorting by " + sortType;
-
-        while (switching) 
-        {
-            switching = false;
-            b = notesList.getElementsByClassName("sortable");
-            console.log(b.length);
-            switch(sortType)
-            //TODO: yucky, this can almost certainly be shrunk but i cant be fucked
-                {
-                case "newest":
-                    for (i = 0; i < (b.length - 1); i++) 
-                    {
-                        shouldSwitch = false;
-                        if (b[i].id < b[i + 1].id) 
-                        {
-                            /* If next item is alphabetically lower than current item,
-                            mark as a switch and break the loop: */
-                            shouldSwitch = true;
-                            break;
-                        }
-                    }
-                    if (shouldSwitch) 
-                    {
-                        /* If a switch has been marked, make the switch
-                        and mark the switch as done: */
-                        b[i].parentNode.insertBefore(b[i + 1], b[i]);
-                        switching = true;
-                    }
-                    break;
-                case "oldest":
-                    for (i = 0; i < (b.length - 1); i++) 
-                    {
-                        shouldSwitch = false;
-                        if (b[i].id > b[i + 1].id) 
-                        {
-                            /* If next item is alphabetically lower than current item,
-                            mark as a switch and break the loop: */
-                            shouldSwitch = true;
-                            break;
-                        }
-                    }
-                    if (shouldSwitch) 
-                    {
-                        /* If a switch has been marked, make the switch
-                        and mark the switch as done: */
-                        b[i].parentNode.insertBefore(b[i + 1], b[i]);
-                        switching = true;
-                    }
-                    break;
-                default:
-                    console.log("sortList got an invalid sortType, woopsie doodle!");
-                }
-
-        }
-        sortButton.removeAttribute("disabled");
-    }
-</script>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Blog Post</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://buggus.neocities.org/Assets/emma_breadbug_picture.png"/>
+    <meta property="og:description" content="Bug's cool website of cool stuff"/>
+    <link href="../style.css" rel="stylesheet">
+    <link rel="icon" href="../Assets/breadbug.ico">
+  </head>  
+  <body>
+    <div class="nav">
+        <div class="link_button_list" id="nextprev">
+        </div>
+    </div>
+    
+    <div class="content">
+        <h5 id="postTitleH1"></h5>
+        <h3 id="postDate"></h3>
+        <div class="paragraph">
+          <p>Hello! I'm starting a blog, apparently. I often find myself thinking of stuff I want to talk about that I feel like publishing for whatever reason, but the only means I have to do that currently is my game notes, which is quite a restrictive format. Even if the thing I happen to want to talk about is a video game, it's often so specific or niche that dedicating an entire entry to just that feels weird. So it'll go here instead! Unless of course I just post this introduction and then nothing else. Also notable is that I'm very much not a writer, and these will likely be very rambly and stream-of-consciousness, as you can likely tell. Maybe I'll get better with time? Who can say!<br><br>How about some website talk! You're currently reading this on my website presumably, so welcome! I'm quite enamoured by the idea of personal websites and \"web 1.0\" stuff, though it was a bit before my time. It helps that I also enjoy working on them, and it scratches a bit of the need-to-make-things itch that likes to consume me at all times, which is nice. Whether I'm any good at it remains to be seen, but I'm reasonably happy with the current iteration I think. I intentionally tried to make everything on the site myself, with only a couple of exceptions currently (the gif on the 404 page and some of the pikring assets), including replacing the original spinning breadbug gif of the ripped model with one I modelled myself, which was itself chosen as a replacement for adding the Maxwell gif (spinning lowpoly cat). One issue with my current site is the navigation button icons. They're static images that are replaced by the gif versions when you mouse over them, but there is a delay in loading them that shuffles the buttons around the now empty space and is a bit annoying. I couldn't manage to find a way to simply pause the animation without an excessive amount of hassle, but maybe it's fixed when you're reading this?<br><br>Also of note is that I'm writing this in advance of actually adding any of the blog stuff to the site, or really planning it out all that much so I'm still unsure if I'll implement it the same way as the game notes with the runtime-generated collapsible list or just have a big static page with it all. Or maybe individual pages for each post? That seems annoying unless I can get a way to generate them automatically, but I'm reluctant to add even more JavaScript reliance. Who knows! Well you do since you're in the future, but that's cheating.</p>
+        </div>
+    </div> 
+    <img class="invisible" src="../Assets/Gifs/navigation/icon_home.gif">
+    <img class="invisible" src="../Assets/Gifs/navigation/icon_back.gif">
+    <img class="invisible" src="../Assets/Gifs/navigation/icon_forward.gif">
+    <script src="../blog_script.js"></script>
+</body>
+  
+</html>
